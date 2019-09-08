@@ -1,0 +1,31 @@
+{
+    "name": "avtomoika",
+    "version": "0.0.1",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "start": "gulp",
+        "clean": "gulp clean"
+    },
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+        "bootstrap": "^4.3.1",
+        "fancybox": "^3.0.1",
+        "gulp": "^4.0.0",
+        "gulp-autoprefixer": "^6.0.0",
+        "gulp-connect": "^5.7.0",
+        "gulp-imagemin": "^5.0.3",
+        "gulp-open": "^3.0.1",
+        "gulp-rigger": "^0.5.8",
+        "gulp-sass": "^4.0.2",
+        "gulp-sourcemaps": "^2.6.4",
+        "gulp-uglify": "^3.0.1",
+        "imagemin-pngquant": "^6.0.0",
+        "jquery": "^3.3.1",
+        "node-sass": "^4.11.0",
+        "rimraf": "^2.6.2",
+        "swiper": "^4.4.6",
+        "yarn": "^1.12.3"
+    }
+}
