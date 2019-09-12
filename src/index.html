@@ -1,14 +1,579 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="ru">
     <head>
-        <meta charset="utf-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Заголовок страницы</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <title>Автомойка "Portal"</title>
+
         <link rel="stylesheet" type="text/css" media="screen" href="/css/main.css" />
-        <script src="/js/main.js"></script>
     </head>
+
     <body>
-    Привет, Мир
+        <header>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-logo">
+                        <div class="logo">
+                            <a href="/">
+                                <img src="img/logo.png" alt="" srcset="img/logo@2x.png 2x">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-md-5 col-nav">
+                        <nav class="navbar">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="#">Рассчитай стоимость своей мойки</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Фотогалерея</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="col-md-1 col-time">
+                        <i class="time24"></i>
+                    </div>
+                    <div class="col-md-3 col-contacts">
+                        <ul class="contacts">
+                            <li><a href="#"><i class="tel"></i> 8 902 374-44-74</a></li>
+                            <li><a href="#"><i class="adress"></i> Автомойка на карте</a></li>
+                            <li><a href="#"><i class="insta"></i> Мы в инстаграм</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main role="main">
+            <section class="top-carousel">
+                <!-- Slider main container -->
+                <div class="swiper-container">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Slides -->
+                        <div class="swiper-slide"><img src="img/slider_bg.jpg" alt="Слайд 1"></div>
+                        <div class="swiper-slide"><img src="img/slider_bg.jpg" alt="Слайд 2"></div>
+                        <div class="swiper-slide"><img src="img/slider_bg.jpg" alt="Слайд 3"></div>
+                    </div>
+    
+                    <!-- If we need navigation buttons -->
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+                <div class="about-us-teaser">
+                    <div class="inner">
+                        <div class="container">
+                            Мойка самообслуживания Portal - мы собрали новейшее европейское оборудование и самую лучшую автохимию, чтобы Вы могли быстро, просто и очень экономно довести до блеска свой любимый автомобиль.
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="who-we-are">
+                <div class="container">
+                    <h1>Что такое мойка самообслуживания Portal?</h1>
+                    <div class="row">
+                        <div class="col-md-4 text-left">
+                            <div class="h3">Как это работает:</div>
+                            <ul>
+                                <li>Заезжаете в свободный бокс</li>
+                                <li>Выбираете на терминале способ оплаты и программу мойки</li>
+                                <li>Берёте пистолет в руку</li>
+                                <li>Моете так как вам нужно и платите столько сколько вам нужно</li>
+                                <li>Выезжаете на чистой машине с зеркальным блеском</li>
+                            </ul>
+                        </div>
+                        <div class="col-md-4 text-center">
+                            <img class="img-fluid" src="img/bigLogo.png" alt="" srcset="img/bigLogo@2x.png 2x">
+                        </div>
+                        <div class="col-md-4 text-right">
+                            <div class="h3">Что вы получаете:</div>
+                            <ul>
+                                <li>Чистую машину</li>
+                                <li>Уход за покрытием профессиональными средствами</li>
+                                <li>Защиту покрытия от мороза обледенения, лишней влаги и щебня с помощью воска</li>
+                                <li>Минимум потраченного времени и средств по сравнению с традиционными автомойками</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="teasers-donut">
+                <div class="container">
+                    <i class="donut-center"></i>
+                    <ul class="donut">
+                        <li>
+                            <div>
+                                <i></i>
+                                <div class="title">Круглосуточно</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <i></i>
+                                <div class="title">Быстро</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <i></i>
+                                <div class="title">Бесконтактная<br> мойка</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <i></i>
+                                <div class="title">Максимальная<br> мощность</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <i></i>
+                                <div class="title">Уборка салона</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <i></i>
+                                <div class="title">Щётка для<br> загрязнённых<br> мест</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <i></i>
+                                <div class="title">Качественно<br> и эффективно</div>
+                            </div>
+                        </li>
+                        <li>
+                            <div>
+                                <i></i>
+                                <div class="title">Экономно</div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="how-to-wash">
+                <div class="container">
+                    <h2>Как правильно мыть машину на мойке<br> самообслуживания Portal?</h2>
+                    <ol class="how-to-wash-list row">
+                        <li class="col-md-4">
+                            <div class="h3">Внесите оплату</div>
+                            <div class="text">
+                                <p>На 1, 5 и 6 постах возможно оплатить кредитной картой.</p>
+                                <p>Все терминалы принимают банкноты 50, 100, 200 руб и монеты по 10 руб.</p>
+                            </div>
+                            <img src="#" alt="">
+                        </li>
+                        <li class="col-md-4">
+                            <div class="h3">Возьмите пистолет</div>
+                            <div class="text">
+                                <ul class="pistols">
+                                    <li>Красный пистолет – пена</li>
+                                    <li>Шампунь, горячая/холодная вода, воск и осмос</li>
+                                    <li>Щетка и пена</li>
+                                </ul>
+                            </div>
+                            <img src="#" alt="">
+                        </li>
+                        <li class="col-md-4">
+                            <div class="h3">Выберите программу</div>
+                            <div class="text"></div>
+                            <img src="#" alt="">
+                        </li>
+                    </ol>
+                </div>
+            </section>
+
+            <section class="calc">
+                <div class="container">
+                    <h2>Рассчитай стоимость твоей мойки.</h2>
+                    <form action="/">
+                        <div class="form-row">
+                            <div class="row">
+                                <div class="col-md-3">
+                                    <input name="wash-type" id="type_1" type="radio" checked>
+                                    <label for="type_1">
+                                        <i></i>
+                                        <div>Чуть грязная</div>
+                                        <div class="detail">
+                                            <span>Щетка+пена</span> 25 р./ мин.
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="col-md-3">
+                                    <input name="wash-type" id="type_2" type="radio">
+                                    <label for="type_2">
+                                        <i></i>
+                                        <div>Сильно грязная</div>
+                                        <div class="detail">
+                                            <span>Щетка+пена</span> 25 р./ мин.
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="col-md-3">
+                                    <input name="wash-type" id="type_3" type="radio">
+                                    <label for="type_3">
+                                        <i></i>
+                                        <div>Зимой</div>
+                                        <div class="detail">
+                                            <span>Щетка+пена</span> 25 р./ мин.
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="col-md-3">
+                                    <input name="wash-type" id="type_4" type="radio">
+                                    <label for="type_4">
+                                        <i></i>
+                                        <div>Мало времени</div>
+                                        <div class="detail">
+                                            <span>Щетка+пена</span> 25 р./ мин.
+                                        </div>
+                                    </label>
+                                </div>
+                            </div>
+                            <input type="hidden" name="wash-type-count" />
+                        </div>
+                        <div class="form-row">
+                            <div class="row">
+                                <div class="col-md-8">Коврики моем? 20 р./ мин</div>
+                                <div class="col-md-4">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <input name="mats" id="mats_y" type="radio" checked>
+                                            <label for="mats_y">Да</label>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <input name="mats" id="mats_n" type="radio">
+                                            <label for="mats_n">Нет</label>
+                                        </div>
+                                    </div>
+                                    <div class="descr">Нет, не моем</div>
+                                </div>
+                            </div>
+                            <input type="hidden" name="mats-count" />
+                        </div>
+                        <div class="form-row">
+                            <div class="row">
+                                <div class="col-md-8">Коврики моем? 20 р./ мин</div>
+                                <div class="col-md-4">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <input name="mats" id="mats_y" type="radio" checked>
+                                            <label for="mats_y">Да</label>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <input name="mats" id="mats_n" type="radio">
+                                            <label for="mats_n">Нет</label>
+                                        </div>
+                                    </div>
+                                    <div class="descr">Нет, не моем</div>
+                                </div>
+                            </div>
+                            <input type="hidden" name="mats-count" />
+                        </div>
+                        <div class="form-row">
+                            <div class="row">
+                                <div class="col-md-8">Коврики моем? 20 р./ мин</div>
+                                <div class="col-md-4">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <input name="mats" id="mats_y" type="radio" checked>
+                                            <label for="mats_y">Да</label>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <input name="mats" id="mats_n" type="radio">
+                                            <label for="mats_n">Нет</label>
+                                        </div>
+                                    </div>
+                                    <div class="descr">Нет, не моем</div>
+                                </div>
+                            </div>
+                            <input type="hidden" name="mats-count" />
+                        </div>
+                        <div class="form-row">
+                            <div class="row">
+                                <div class="col-md-8">Коврики моем? 20 р./ мин</div>
+                                <div class="col-md-4">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <input name="mats" id="mats_y" type="radio" checked>
+                                            <label for="mats_y">Да</label>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <input name="mats" id="mats_n" type="radio">
+                                            <label for="mats_n">Нет</label>
+                                        </div>
+                                    </div>
+                                    <div class="descr">Нет, не моем</div>
+                                </div>
+                            </div>
+                            <input type="hidden" name="mats-count" />
+                        </div>
+                        <div class="form-row">
+                            <div class="row">
+                                <div class="col-md-8">Коврики моем? 20 р./ мин</div>
+                                <div class="col-md-4">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <input name="mats" id="mats_y" type="radio" checked>
+                                            <label for="mats_y">Да</label>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <input name="mats" id="mats_n" type="radio">
+                                            <label for="mats_n">Нет</label>
+                                        </div>
+                                    </div>
+                                    <div class="descr">Нет, не моем</div>
+                                </div>
+                            </div>
+                            <input type="hidden" name="mats-count" />
+                        </div>
+                        <div class="form-row">
+                            <div class="row">
+                                <div class="col-md-8">Коврики моем? 20 р./ мин</div>
+                                <div class="col-md-4">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <input name="mats" id="mats_y" type="radio" checked>
+                                            <label for="mats_y">Да</label>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <input name="mats" id="mats_n" type="radio">
+                                            <label for="mats_n">Нет</label>
+                                        </div>
+                                    </div>
+                                    <div class="descr">Нет, не моем</div>
+                                </div>
+                            </div>
+                            <input type="hidden" name="mats-count" />
+                        </div>
+                    </form>
+                </div>
+                <div class="calc-total"><i></i> Примерная стоимость мойки <span>145 рублей</span></div>
+            </section>
+
+            <section class="programs">
+                <div class="container">
+                    <h2>Рекомендованная последовательность мойки</h2>
+                    <ul>
+                        <li><img src="#" alt=""></li>
+                        <li><img src="#" alt=""></li>
+                        <li><img src="#" alt=""></li>
+                    </ul>
+                    <div class="btn btn-default">Смотреть еще программы</div>
+                </div>
+            </section>
+
+            <section class="need-accessories">
+                <div class="container">
+                    <h2>Нужны аксессуары?</h2>
+                    <ul>
+                        <li>Незамерзайка 120 руб</li>
+                        <li>Cалфетки 50 руб</li>
+                        <li>Ароматизатор 100 руб</li>
+                        <li>Очиститель салона 100 руб</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="personal-offer">
+                <div class="container">
+                    <h2>Получи персональное предложение!</h2>
+                    <p>Заполни форму и получи скидку 30 рублей на первую мойку</p>
+                    <form action="">
+                        <div class="row">
+                            <div class="col-md-10">
+                                <div class="row">
+                                    <div class="col-md-4"><input type="text"></div>
+                                    <div class="col-md-4"><input type="text"></div>
+                                    <div class="col-md-4"><input type="text"></div>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="btn btn-default">Отправить</div>
+                            </div>
+                            <div class="col-md-12">
+                                <input type="checkbox" id="agree" name="agree">
+                                <label for="agree">Согласен получать новости и акции</label>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+            <section class="faq">
+                <div class="container">
+                    <h2>Вопрос-ответ</h2>
+                    <ul>
+                        <li>
+                            <div class="h3">Могу ли я расплатиться картой?</div>
+                            <p>Терминал принимает банковские карты, есть бесконтактная оплата, а так же , аппарат принимает купюры номиналом 10, 50, 100 рублей. Будьте внимательны: аппарат сдачи не выдаёт. Используйте оплаченное время максимально эффективно.</p>
+                        </li>
+                        <li>
+                            <div class="h3">Как пользоваться Turbo кнопкой?</div>
+                            <p>Выбираете нужный режим и нажимаете кнопку Turbo</p>
+                        </li>
+                        <li>
+                            <div class="h3">Как работает воск?</div>
+                            <p>Воск при высыхании образует защитную пленку на поверхности лакокрасочного покрытия. Это на некоторое время помогает предотвратить прилипание льда и грязи к поверхности автомобиля. Важно растереть воск по поверхности автомобиля максимально быстро, иначе при высыхании он оставит неприятные разводы.</p>
+                        </li>
+                        <li>
+                            <div class="h3">Могу ли я использовать свои губки щетки ведра?</div>
+                            <p>Для этого на мойке самообслуживания находится специальная протирочная зона</p>
+                        </li>
+                        <li>
+                            <div class="h3">Как работает кнопка Стоп?</div>
+                            <p>Приостанавливает работу программы для смены режима.</p>
+                        </li>
+                        <li>
+                            <div class="h3">Как отмыть сложные загрязнения?</div>
+                            <p>При сильных или старых загрязнениях воспользуйтесь щеткой или турбо режимом. Выберите программу щетка плюс пена, она хорошо подходит для удаления очень сильных загрязнений. Смойте пену холодной или горячей водой. Для защиты поверхности автомобиля от обледенения щебня и реагентов нанесите защитный слой воска. При регулярном использовании защита покрытия работает эффективнее. Для блеска без разводов воспользуйтесь программой сушка и блеск.</p>
+                        </li>
+                        <li>
+                            <div class="h3">Как помыть машину быстрее всего?</div>
+                            <p>При легком или частичном загрязнении воспользуйтесь режимом быстрая мойка. Включите программу вода + шампунь, смойте основною грязь, затем ополосните машину холодной и горячей водой.</p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="reviews">
+                <div class="container">
+                    <h2>Отзывы</h2>
+                    <ul>
+                        <li>
+                            <div class="title">Оценил экономию времени и денег</div>
+                            <div class="text">
+                                Работаю в такси — для меня очень важно, чтобы машина была постоянно чистая. Раньше в день на мойку легко могло уйти до 500-600р учитывая, что иногда и 2-3 раза за день приходилось мыть.<br>
+                                Да и времени в очередях терял не мало.<br>
+                                <br>
+                                Но больше всего выгодно по времени - не простаиваю, как раньше по полчаса.
+                            </div>
+                            <div class="author">Александр К.</div>
+                        </li>
+                        <li>
+                            <div class="title">Оценил экономию времени и денег</div>
+                            <div class="text">
+                                Работаю в такси — для меня очень важно, чтобы машина была постоянно чистая. Раньше в день на мойку легко могло уйти до 500-600р учитывая, что иногда и 2-3 раза за день приходилось мыть.<br>
+                                Да и времени в очередях терял не мало.<br>
+                                <br>
+                                Но больше всего выгодно по времени - не простаиваю, как раньше по полчаса.
+                            </div>
+                            <div class="author">Александр К.</div>
+                        </li>
+                        <li>
+                            <div class="title">Оценил экономию времени и денег</div>
+                            <div class="text">
+                                Работаю в такси — для меня очень важно, чтобы машина была постоянно чистая. Раньше в день на мойку легко могло уйти до 500-600р учитывая, что иногда и 2-3 раза за день приходилось мыть.<br>
+                                Да и времени в очередях терял не мало.<br>
+                                <br>
+                                Но больше всего выгодно по времени - не простаиваю, как раньше по полчаса.
+                            </div>
+                            <div class="author">Александр К.</div>
+                        </li>
+                    </ul>
+                    <div class="btn btn-default">Оставить отзыв</div>
+                </div>
+            </section>
+
+            <section class="gallery">
+                <div class="container">
+                    <h2>Наша фотогалерея</h2>
+                    <ul>
+                        <li>
+                            <div class="item">
+                                <div class="row">
+                                    <div class="col-md-8">
+                                        <div class="img">
+                                            <div style="background-image: url('#');"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="img">
+                                            <div style="background-image: url('#');"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="img">
+                                            <div style="background-image: url('#');"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="img">
+                                            <div style="background-image: url('#');"></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="img">
+                                            <div style="background-image: url('#');"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="social">
+                <div class="container">
+                    <h2>Подпишись и получай последние новости, акции и скидки</h2>
+                    <ul>
+                        <li><a href="#"><i></i> Мы во вконтакте</a></li>
+                        <li><a href="#"><i></i> Мы в инстаграм</a></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="map">
+                <div class="container">
+                    <div id="bottom-map"></div>
+                </div>
+            </section>
+    
+            <!-- FOOTER -->
+            <footer>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-3 col-logo">
+                            <div class="logo">
+                                <a href="/">
+                                    <img src="img/logo.png" alt="" srcset="img/logo@2x.png 2x">
+                                </a>
+                            </div>
+                        </div>
+                        <div class="col-md-5 col-nav">
+                            <nav class="navbar">
+                                <ul class="navbar-nav mr-auto">
+                                    <li class="nav-item active">
+                                        <a class="nav-link" href="#">Рассчитай стоимость своей мойки</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#">Фотогалерея</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="col-md-1 col-time">
+                            <i class="time24"></i>
+                        </div>
+                        <div class="col-md-3 col-contacts">
+                            <ul class="contacts">
+                                <li><a href="#"><i class="tel"></i> 8 902 374-44-74</a></li>
+                                <li><a href="#"><i class="adress"></i> Автомойка на карте</a></li>
+                                <li><a href="#"><i class="insta"></i> Мы в инстаграм</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </main>
+
+        <script src="/js/main.js"></script>
     </body>
 </html>

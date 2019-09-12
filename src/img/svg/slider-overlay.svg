@@ -1,0 +1,15 @@
+
+<svg width="1924px" height="275px" viewBox="0 0 1924 275" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49 (51002) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="69.0956341%" y1="73.3781818%" x2="4.0956341%" y2="-3.62181818%" id="linearGradient-1">
+            <stop stop-color="#0D2A7C" offset="0%"></stop>
+            <stop stop-color="#0B69B2" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="slider-overlay">
+        <path d="M965.77,73.81 C584.34,73.81 240.74,45.41 0,0 L0,275 C240.74,229.59 584.34,201.18 965.77,201.18 C1343.24,201.18 1683.65,229.01 1924,273.59 L1924,1.4 C1683.65,46 1343.24,73.81 965.77,73.81 Z" id="shape" fill="url(#linearGradient-1)" fill-rule="nonzero" opacity="0.900305707"></path>
+        <path d="M1924,275 L0,275 L1924,275 Z M0,275 C240.74,229.59 584.34,201.18 965.77,201.18 C1343.24,201.18 1683.65,229.01 1924,273.59 L0,275 Z" id="white_bg" fill="#FFFFFF"></path>
+    </g>
+</svg>

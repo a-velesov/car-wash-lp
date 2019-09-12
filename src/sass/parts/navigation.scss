@@ -1,0 +1,117 @@
+header, footer{
+    background-color: rgba(0, 26, 91, 0.9);
+    color: #fff;
+    height: 128px;
+    overflow: hidden;
+    z-index: 10;
+
+    @media screen and (min-width: 1200px){
+        .col-logo{
+            flex: 0 0 24%;
+            max-width: 24%;
+        }
+        .col-nav{
+            flex: 0 0 44%;
+            max-width: 44%;
+        }
+        .col-time{
+            flex: 0 0 8%;
+            max-width: 8%;
+        }
+        .col-contacts{
+            flex: 0 0 24%;
+            max-width: 24%;
+        }
+    }
+
+    .row{
+        align-items: center;
+    }
+
+    .logo{
+        display: flex;
+        align-items: center;
+        height: 114px;
+    }
+
+    a{
+        color: #fff;
+    }
+
+    ul{
+        margin: 0px;
+        padding: 0px;
+        list-style-type: none;
+    }
+
+    i{
+        font-family: 'icomoon';
+        font-style: normal;
+    }
+
+    ul.contacts{
+        padding-left: 56px;
+        margin-top: 20px;
+         
+        li{
+            position: relative;
+            font-size: 1.3em;
+            line-height: 1.5em;
+            font-weight: bold;
+
+            a{
+                text-decoration: none;
+            }
+            i{
+                position: absolute;
+                width: 16px;
+                text-align: center;
+                font-size: 16px;
+                left: -27px;
+            }
+        }
+    }
+
+    .col-time{
+        text-align: center;
+    }
+}
+
+header{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+nav.navbar{
+    ul{
+        display: flex;
+        font-size: 1.35em;
+        font-weight: 600;
+        justify-content: space-between;
+
+        li{
+            a{
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+i.time24{
+    font-size: 56px;
+    color: #76c201;
+}
+i.time24:before{
+    content: "\e900";
+}
+i.tel:before{
+    content: "\e901";
+} 
+i.adress:before{
+    content: "\e902";
+}
+i.insta:before{
+    content: "\e903";
+}

@@ -1,0 +1,210 @@
+.teasers-donut{
+    position: relative;
+    z-index: 11;
+    padding-bottom: 25%;
+    margin-bottom: 52px;
+}
+i.donut-center{
+    display: block;
+    background-image: url("../img/moika_center.jpg");
+    width: 564px;
+    height: 290px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -145px 0px 0px -282px;
+}
+ul.donut{
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: 2px;
+
+    li{
+        background-image: url("../img/svg/donut-part.svg");
+        background-repeat: no-repeat;
+        width: 330px;
+        height: 470px;
+        display: block;
+        position: absolute;
+        transform-origin: 0% 100%;
+        transform: rotate(0deg);
+        top: -470px;
+
+        &>div{
+            width: 90%;
+            height: 0px;
+            padding-top: 75%;
+            position: relative;
+        }
+        i{
+            position: absolute;
+            top: 33%;
+            left: 50%;
+            font-family: 'icomoon';
+            font-style: normal;
+            font-size: 90px;
+            margin: -45px 0px 0px -45px;
+            color: #fff;
+        }
+        div.title{
+            position: absolute;
+            top: 63%;
+            left: 0px;
+            right: 0px;
+            text-align: center;
+            color: #fff;
+            font-size: 1.7em;
+            line-height: 1em;
+            font-weight: bold;
+        }
+
+        &:nth-child(1){
+            transform: rotate(0deg);
+            &>div{
+                transform: rotate(0deg);
+                i{
+                    left: 45%;
+                }
+                i:before{
+                    content: "\e904";
+                }
+                div.title{
+                    top: 63%;
+                }
+            }
+        }
+        &:nth-child(2){
+            transform: rotate(45deg);
+            &>div{
+                transform: rotate(-45deg);
+                i{
+                    top: 23%;
+                    left: 44%;
+                    font-size: 105px;
+                }
+                i:before{
+                    content: "\e905";
+                }
+                div.title{
+                    top: 67%;
+                }
+            }
+        }
+        &:nth-child(3){
+            transform: rotate(90deg);
+            &>div{
+                transform: rotate(-90deg);
+                i{
+                    left: 47%;
+                    top: 21%;
+                    font-size: 86px;
+                }
+                i:before{
+                    content: "\e906";
+                }
+                div.title{
+                    top: 55%;
+                    font-size: 1.3em;
+                    line-height: 1.3em;
+                    right: 26px;
+                }
+            }
+        }
+        &:nth-child(4){
+            transform: rotate(135deg);
+            &>div{
+                transform: rotate(-135deg);
+                i{
+                    left: 41%;
+                    top: 3%;
+                    font-size: 148px;
+                }
+                i:before{
+                    content: "\e907";
+                }
+                div.title{
+                    top: 44%;
+                    line-height: 1.35;
+                }
+            }
+        }
+        &:nth-child(5){
+            transform: rotate(180deg);
+            &>div{
+                transform: rotate(-180deg);
+                i{
+                    left: 60%;
+                    top: 26%;
+                    font-size: 88px;
+                }
+                i:before{
+                    content: "\e908";
+                }
+                div.title{
+                    top: 57%;
+                    left: 50px;
+                    font-size: 1.5em;
+                }
+            }
+        }
+        &:nth-child(6){
+            transform: rotate(225deg);
+            &>div{
+                transform: rotate(-225deg);
+                i{
+                    left: 49%;
+                    top: 15%;
+                    font-size: 94px;
+                }
+                i:before{
+                    content: "\e909";
+                }
+                div.title{
+                    top: 50%;
+                    left: 66px;
+                    font-size: 1.45em;
+                    line-height: 1.3em;
+                }
+            }
+        }
+        &:nth-child(7){
+            transform: rotate(270deg);
+            &>div{
+                transform: rotate(-270deg);
+                i{
+                    left: 56%;
+                    top: 20%;
+                    font-size: 105px;
+                }
+                i:before{
+                    content: "\e90a";
+                }
+                div.title{
+                    top: 60%;
+                    font-size: 1.45em;
+                    line-height: 1.3em;
+                }
+            }
+        }
+        &:nth-child(8){
+            transform: rotate(315deg);
+            &>div{
+                transform: rotate(-315deg);
+                i{
+                    left: 55%;
+                }
+                i:before{
+                    content: "\e90b";
+                }
+                div.title{
+                    top: 65%;
+                    left: 34px;
+                }
+            }
+        }
+    }
+}

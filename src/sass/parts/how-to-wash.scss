@@ -1,0 +1,32 @@
+.how-to-wash{
+    position: relative;
+    padding-top: 242px;
+    color: #fff;
+    background: #66bfe2;
+    background: -moz-linear-gradient(top, #66bfe2 0%, #098bc8 45%, #098bc8 100%);
+    background: -webkit-linear-gradient(top, #66bfe2 0%,#098bc8 45%,#098bc8 100%);
+    background: linear-gradient(to bottom, #66bfe2 0%,#098bc8 45%,#098bc8 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#66bfe2', endColorstr='#098bc8',GradientType=0 );
+
+    h2, .h2{
+        font-size: 3em;
+        line-height: 1.25em;
+        margin-bottom: 76px;
+    }
+
+    &:before{
+        display: block;
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        height: 110px;
+        background-image: url("../img/svg/who-we-are_bg-top_white.svg");
+        background-repeat: no-repeat;
+    }
+    &:after{
+        display: block;
+        content: "";
+    }
+}

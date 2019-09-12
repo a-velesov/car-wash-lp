@@ -1,7 +1,29 @@
-html{
-    background: #fff;
-}
+//ALSSchlangeslab font
+@import "vendor/ALSSchlangeslab.scss";
 
-body{
-    padding: 25px;
-}
+//Icons font
+@import "vendor/iconsSet.scss";
+
+// bootstrap
+@import "vendor/bootstrap-custom.scss";
+
+// Swiper 4.4.6
+@import "vendor/swiper.min.scss";
+
+// global
+@import "global.scss";
+
+//navigation
+@import "parts/navigation.scss";
+
+//top-carousel
+@import "parts/top-carousel.scss";
+
+//who-we-are
+@import "parts/who-we-are.scss";
+
+//teasers-donut
+@import "parts/teasers-donut.scss";
+
+//how-to-wash
+@import "parts/how-to-wash.scss";

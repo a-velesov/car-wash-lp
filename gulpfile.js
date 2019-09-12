@@ -60,7 +60,7 @@ gulp.task('connect', function(){ //стартуем сервер
 
 gulp.task('html', function(){
     return gulp.src(path.src.html) //Выберем файлы по нужному пути
-        .pipe(rigger()) //Прогоним через rigger
+       // .pipe(rigger()) //Прогоним через rigger
         .pipe(gulp.dest(path.build.html)) //Выплюнем их в папку build
         .pipe(connect.reload()); //И перезагрузим наш сервер для обновлений
 });

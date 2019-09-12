@@ -1,0 +1,38 @@
+.top-carousel{
+    position: relative;
+    .swiper-container{
+        // height: 100px;
+        width: 100%;
+
+        img{
+            width: 100%;
+        }
+    }
+    .about-us-teaser{
+        background-image: url("../img/svg/slider-overlay.svg");
+        background-repeat: no-repeat;
+        height: 0px;
+        padding-top: 14.3%;
+        z-index: 10;
+        background-size: 100%;
+        position: absolute;
+        bottom: -5px;
+        left: 0px;
+        right: 0px;
+
+        .inner{
+            position: absolute;
+            top: 27%;
+            left: 0px;
+            right: 0px;
+            height: 46%;
+            color: #fff;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            font-size: 1.8em;
+            line-height: 1.2em;
+            font-weight: 300;
+        }
+    }
+}
