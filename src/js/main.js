@@ -12,4 +12,14 @@ $(document).ready(() => {
             nextEl: '.top-carousel .swiper-button-next',
         }
     });
+
+    //programs carousel init
+    let programsCarousel = new Swiper ('.programs .swiper-container', {
+        loop: true,
+        autoplay: true,
+        navigation: {
+            prevEl: '.programs .swiper-button-prev',
+            nextEl: '.programs .swiper-button-next',
+        }
+    });
 });

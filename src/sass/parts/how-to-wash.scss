@@ -29,4 +29,121 @@
         display: block;
         content: "";
     }
+
+    ol.how-to-wash-list{
+        padding: 0px;
+        margin: 0px;
+        list-style-type: none;
+        counter-reset: how-to-wash-counter;
+
+        &>li{
+            counter-increment: how-to-wash-counter;
+            padding-left: 88px;
+            padding-bottom: 22%;
+            margin-bottom: 145px;
+
+            &:before {
+                content: counter(how-to-wash-counter);
+                background-image: url("../img/svg/num-bg.svg");
+                background-repeat: no-repeat;
+                display: block;
+                width: 78px;
+                height: 78px;
+                text-align: center;
+                line-height: 78px;
+                font-size: 2em;
+                font-weight: bold;
+                box-sizing: border-box;
+                padding-top: 2px;
+                position: absolute;
+                left: 0px;
+                top: -24px;
+            }
+
+            h3, .h3{
+                color: #1e274f;
+                font-weight: bold;
+            }
+            .text{
+                max-width: 256px;
+            }
+            .img{
+                position: absolute;
+                left: 0px;
+                right: 28px;
+                bottom: 0px;
+                padding-bottom: 60%;
+                background-position: 50%;
+                background-size: cover;
+
+                &:after{
+                    content: "";
+                    background-image: url("../img/svg/arrow.svg");
+                    background-size: 100%;
+                    display: block;
+                    width: 35px;
+                    height: 18px;
+                    position: absolute;
+                    top: 50%;
+                    left: 100%;
+                    margin: -8px 0px 0px -7px;
+                }
+            }
+
+            &:nth-child(1){
+                .img{
+                    background-image: url("../img/how-to-wash_001.jpg");
+                }
+            }
+            &:nth-child(2){
+                .img{
+                    background-image: url("../img/how-to-wash_002.jpg");
+                }
+            }
+            &:nth-child(3){
+                .img{
+                    background-image: url("../img/how-to-wash_003.jpg");
+                    &:after{
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+
+    ul.pistols{
+        list-style-type: none;
+        margin-top: -10px;
+
+        li{
+            position: relative;
+            padding: 32px 0px 0px 0px;
+
+            &:before{
+                content: "";
+                background-image: url("../img/svg/pistol.svg");
+                background-repeat: no-repeat;
+                background-size: 100%;
+                display: block;
+                width: 250px;
+                height: 45px;
+                position: absolute;
+                left: -100px;
+                top: 15px;
+            }
+
+            &:nth-child(1){
+                &:before{
+                }
+            }
+            &:nth-child(2){
+                &:before{
+                }
+            }
+            &:nth-child(3){
+                &:before{
+                }
+            }
+        }
+    }
 }

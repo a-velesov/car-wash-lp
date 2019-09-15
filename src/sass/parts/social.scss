@@ -1,0 +1,18 @@
+.social{
+    position: relative;
+    background: #fff;
+    color: #1768bc;
+
+    &:before{
+        display: block;
+        content: "";
+        position: absolute;
+        left: 0px;
+        right: 0px;
+        background-repeat: no-repeat;
+        background-image: url("../img/svg/social_bg-top.svg");
+        bottom: 100%;
+        height: 100px;
+        background-size: 100% 100%;
+    }
+}

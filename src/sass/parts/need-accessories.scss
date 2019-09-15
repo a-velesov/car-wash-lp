@@ -1,0 +1,66 @@
+.need-accessories{
+    position: relative;
+    background: #1768bc;
+    color: #fff;
+    padding-bottom: 146px;
+
+    &:before{
+        display: block;
+        content: "";
+        position: absolute;
+        left: 0px;
+        right: 0px;
+        background-repeat: no-repeat;
+        background-image: url("../img/svg/calc_bg-bottom-top.svg");
+        bottom: 100%;
+        height: 100px;
+        background-size: 100% 100%;
+    }
+    h2, .h2{
+        font-size: 2.9em;
+        line-height: 1em;
+        position: relative;
+        top: -45px;
+        padding-left: 80px;
+    }
+    .row{
+        align-items: center;
+    }
+
+    ul{
+        list-style-type: none;
+        margin: -23px 0px 0px;
+        padding: 0px 0px 0px 24px;
+        font-size: 1.8em;
+        line-height: 2.5em;
+
+        li{
+            position: relative;
+            padding-left: 45px;
+
+            &:before{
+                content: "";
+                position: absolute;
+                display: block;
+                width: 18px;
+                height: 18px;
+                background: #0090f0;
+                left: 0px;
+                top: 50%;
+                margin-top: -9px;
+                border-radius: 18px;
+            }
+        }
+    }
+    .accesories{
+        background-repeat: no-repeat;
+        background-image: url("../img/acessories-man.png");
+        position: absolute;
+        width: 291px;
+        height: 447px;
+        top: 50%;
+        left: 50%;
+        margin: -245px 0px 0px -82px;
+        z-index: 1;
+    }
+}

@@ -57,7 +57,7 @@
                         <div class="swiper-slide"><img src="img/slider_bg.jpg" alt="Слайд 2"></div>
                         <div class="swiper-slide"><img src="img/slider_bg.jpg" alt="Слайд 3"></div>
                     </div>
-    
+                
                     <!-- If we need navigation buttons -->
                     <div class="swiper-button-prev"></div>
                     <div class="swiper-button-next"></div>
@@ -165,9 +165,9 @@
                             <div class="h3">Внесите оплату</div>
                             <div class="text">
                                 <p>На 1, 5 и 6 постах возможно оплатить кредитной картой.</p>
-                                <p>Все терминалы принимают банкноты 50, 100, 200 руб и монеты по 10 руб.</p>
+                                <p>Все терминалы принимают банкноты 50, 100, 200 руб и монеты по 10 руб.</p>                                   
                             </div>
-                            <img src="#" alt="">
+                            <div class="img"></div>
                         </li>
                         <li class="col-md-4">
                             <div class="h3">Возьмите пистолет</div>
@@ -178,12 +178,12 @@
                                     <li>Щетка и пена</li>
                                 </ul>
                             </div>
-                            <img src="#" alt="">
+                            <div class="img"></div>
                         </li>
                         <li class="col-md-4">
                             <div class="h3">Выберите программу</div>
                             <div class="text"></div>
-                            <img src="#" alt="">
+                            <div class="img"></div>
                         </li>
                     </ol>
                 </div>
@@ -194,21 +194,21 @@
                     <h2>Рассчитай стоимость твоей мойки.</h2>
                     <form action="/">
                         <div class="form-row">
-                            <div class="row">
+                            <div class="row first-row">
                                 <div class="col-md-3">
                                     <input name="wash-type" id="type_1" type="radio" checked>
                                     <label for="type_1">
-                                        <i></i>
+                                        <i class="little-dirty"></i>
                                         <div>Чуть грязная</div>
                                         <div class="detail">
-                                            <span>Щетка+пена</span> 25 р./ мин.
+                                            <span>Пена</span> 25 р./ мин.
                                         </div>
                                     </label>
                                 </div>
                                 <div class="col-md-3">
                                     <input name="wash-type" id="type_2" type="radio">
                                     <label for="type_2">
-                                        <i></i>
+                                        <i class="very-dirty"></i>
                                         <div>Сильно грязная</div>
                                         <div class="detail">
                                             <span>Щетка+пена</span> 25 р./ мин.
@@ -218,187 +218,206 @@
                                 <div class="col-md-3">
                                     <input name="wash-type" id="type_3" type="radio">
                                     <label for="type_3">
-                                        <i></i>
+                                        <i class="winter"></i>
                                         <div>Зимой</div>
                                         <div class="detail">
-                                            <span>Щетка+пена</span> 25 р./ мин.
+                                            <span>Вода+шампунь</span> 25 р./ мин.
                                         </div>
                                     </label>
                                 </div>
                                 <div class="col-md-3">
                                     <input name="wash-type" id="type_4" type="radio">
                                     <label for="type_4">
-                                        <i></i>
+                                        <i class="small-time"></i>
                                         <div>Мало времени</div>
                                         <div class="detail">
-                                            <span>Щетка+пена</span> 25 р./ мин.
+                                            <span>Вода+шампунь</span> 25 р./ мин.
                                         </div>
                                     </label>
                                 </div>
                             </div>
-                            <input type="hidden" name="wash-type-count" />
+                            <input type="hidden" name="wash-type-count" data-price="" value="3" />
                         </div>
-                        <div class="form-row">
+                        <div class="form-row line">
                             <div class="row">
-                                <div class="col-md-8">Коврики моем? 20 р./ мин</div>
-                                <div class="col-md-4">
+                                <div class="col-md-9 text-right">Коврики моем? 20 р./ мин</div>
+                                <div class="col-md-3">
                                     <div class="row">
                                         <div class="col-md-6">
-                                            <input name="mats" id="mats_y" type="radio" checked>
+                                            <input name="mats" id="mats_y" type="radio">
                                             <label for="mats_y">Да</label>
                                         </div>
                                         <div class="col-md-6">
-                                            <input name="mats" id="mats_n" type="radio">
+                                            <input name="mats" id="mats_n" type="radio" checked>
                                             <label for="mats_n">Нет</label>
                                         </div>
                                     </div>
-                                    <div class="descr">Нет, не моем</div>
+                                    <div class="descr" data-yes="Моем " data-no="Нет, не моем">Нет, не моем</div>
                                 </div>
                             </div>
-                            <input type="hidden" name="mats-count" />
+                            <input type="hidden" name="mats-count" data-price="20" value="0" />
                         </div>
-                        <div class="form-row">
+                        <div class="form-row line">
                             <div class="row">
-                                <div class="col-md-8">Коврики моем? 20 р./ мин</div>
-                                <div class="col-md-4">
+                                <div class="col-md-9 text-right">Смываем всё горячей водой 22р./ мин</div>
+                                <div class="col-md-3">
                                     <div class="row">
                                         <div class="col-md-6">
-                                            <input name="mats" id="mats_y" type="radio" checked>
-                                            <label for="mats_y">Да</label>
+                                            <input name="hot" id="hot_y" type="radio" checked>
+                                            <label for="hot_y">Да</label>
                                         </div>
                                         <div class="col-md-6">
-                                            <input name="mats" id="mats_n" type="radio">
-                                            <label for="mats_n">Нет</label>
+                                            <input name="hot" id="hot_n" type="radio">
+                                            <label for="hot_n">Нет</label>
                                         </div>
                                     </div>
-                                    <div class="descr">Нет, не моем</div>
+                                    <div class="descr" data-yes="Смываем " data-no="Нет, не смываем">Нет, не смываем</div>
                                 </div>
                             </div>
-                            <input type="hidden" name="mats-count" />
+                            <input type="hidden" name="hot-count" data-price="22" value="3" />
                         </div>
-                        <div class="form-row">
+                        <div class="form-row line">
                             <div class="row">
-                                <div class="col-md-8">Коврики моем? 20 р./ мин</div>
-                                <div class="col-md-4">
+                                <div class="col-md-9 text-right">Смываем все холодной водой 20 р./ мин</div>
+                                <div class="col-md-3">
                                     <div class="row">
                                         <div class="col-md-6">
-                                            <input name="mats" id="mats_y" type="radio" checked>
-                                            <label for="mats_y">Да</label>
+                                            <input name="cold" id="cold_y" type="radio" checked>
+                                            <label for="cold_y">Да</label>
                                         </div>
                                         <div class="col-md-6">
-                                            <input name="mats" id="mats_n" type="radio">
-                                            <label for="mats_n">Нет</label>
+                                            <input name="cold" id="cold_n" type="radio">
+                                            <label for="cold_n">Нет</label>
                                         </div>
                                     </div>
-                                    <div class="descr">Нет, не моем</div>
+                                    <div class="descr" data-yes="Смываем " data-no="Нет, не смываем">Нет, не смываем</div>
                                 </div>
                             </div>
-                            <input type="hidden" name="mats-count" />
+                            <input type="hidden" name="cold-count" data-price="20" value="3" />
                         </div>
-                        <div class="form-row">
+                        <div class="form-row line">
                             <div class="row">
-                                <div class="col-md-8">Коврики моем? 20 р./ мин</div>
-                                <div class="col-md-4">
+                                <div class="col-md-9 text-right">Наносим воск? 25 р./ мин</div>
+                                <div class="col-md-3">
                                     <div class="row">
                                         <div class="col-md-6">
-                                            <input name="mats" id="mats_y" type="radio" checked>
-                                            <label for="mats_y">Да</label>
+                                            <input name="wax" id="wax_y" type="radio" checked>
+                                            <label for="wax_y">Да</label>
                                         </div>
                                         <div class="col-md-6">
-                                            <input name="mats" id="mats_n" type="radio">
-                                            <label for="mats_n">Нет</label>
+                                            <input name="wax" id="wax_n" type="radio">
+                                            <label for="wax_n">Нет</label>
                                         </div>
                                     </div>
-                                    <div class="descr">Нет, не моем</div>
+                                    <div class="descr" data-yes="Наносим " data-no="Нет, не наносим">Нет, не наносим</div>
                                 </div>
                             </div>
-                            <input type="hidden" name="mats-count" />
+                            <input type="hidden" name="wax-count" data-price="25" value="3" />
                         </div>
-                        <div class="form-row">
+                        <div class="form-row line">
                             <div class="row">
-                                <div class="col-md-8">Коврики моем? 20 р./ мин</div>
-                                <div class="col-md-4">
+                                <div class="col-md-9 text-right">Смываем очищенной от всех примесей водой? 22 р./ мин</div>
+                                <div class="col-md-3">
                                     <div class="row">
                                         <div class="col-md-6">
-                                            <input name="mats" id="mats_y" type="radio" checked>
-                                            <label for="mats_y">Да</label>
+                                            <input name="clearw" id="clearw_y" type="radio" checked>
+                                            <label for="clearw_y">Да</label>
                                         </div>
                                         <div class="col-md-6">
-                                            <input name="mats" id="mats_n" type="radio">
-                                            <label for="mats_n">Нет</label>
+                                            <input name="clearw" id="clearw_n" type="radio">
+                                            <label for="clearw_n">Нет</label>
                                         </div>
                                     </div>
-                                    <div class="descr">Нет, не моем</div>
+                                    <div class="descr" data-yes="Смываем " data-no="Нет, не смываем">Нет, не смываем</div>
                                 </div>
                             </div>
-                            <input type="hidden" name="mats-count" />
+                            <input type="hidden" name="clearw-count" data-price="25" value="2" />
                         </div>
-                        <div class="form-row">
+                        <div class="form-row line">
                             <div class="row">
-                                <div class="col-md-8">Коврики моем? 20 р./ мин</div>
-                                <div class="col-md-4">
+                                <div class="col-md-9 text-right">Пылесосить авто будешь? 10 р./ мин</div>
+                                <div class="col-md-3">
                                     <div class="row">
                                         <div class="col-md-6">
-                                            <input name="mats" id="mats_y" type="radio" checked>
-                                            <label for="mats_y">Да</label>
+                                            <input name="vacuum" id="vacuum_y" type="radio" checked>
+                                            <label for="vacuum_y">Да</label>
                                         </div>
                                         <div class="col-md-6">
-                                            <input name="mats" id="mats_n" type="radio">
-                                            <label for="mats_n">Нет</label>
+                                            <input name="vacuum" id="vacuum_n" type="radio">
+                                            <label for="vacuum_n">Нет</label>
                                         </div>
                                     </div>
-                                    <div class="descr">Нет, не моем</div>
+                                    <div class="descr" data-yes="Буду " data-no="Нет, не буду">Нет, не буду</div>
                                 </div>
                             </div>
-                            <input type="hidden" name="mats-count" />
+                            <input type="hidden" name="vacuum-count" data-price="10" value="2" />
                         </div>
                     </form>
                 </div>
+                <div class="calc-car"></div>
                 <div class="calc-total"><i></i> Примерная стоимость мойки <span>145 рублей</span></div>
             </section>
 
             <section class="programs">
                 <div class="container">
                     <h2>Рекомендованная последовательность мойки</h2>
-                    <ul>
-                        <li><img src="#" alt=""></li>
-                        <li><img src="#" alt=""></li>
-                        <li><img src="#" alt=""></li>
-                    </ul>
-                    <div class="btn btn-default">Смотреть еще программы</div>
+                    <!-- Slider main container -->
+                    <div class="swiper-container">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide"><img src="img/recommend-seq.png" alt="Слайд 1"></div>
+                            <div class="swiper-slide"><img src="img/recommend-seq.png" alt="Слайд 2"></div>
+                            <div class="swiper-slide"><img src="img/recommend-seq.png" alt="Слайд 3"></div>
+                        </div>
+                
+                        <!-- If we need navigation buttons -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                    <div class="text-center">
+                        <div class="btn btn-default">Смотреть еще программы</div>
+                    </div>
                 </div>
             </section>
 
             <section class="need-accessories">
                 <div class="container">
                     <h2>Нужны аксессуары?</h2>
-                    <ul>
-                        <li>Незамерзайка 120 руб</li>
-                        <li>Cалфетки 50 руб</li>
-                        <li>Ароматизатор 100 руб</li>
-                        <li>Очиститель салона 100 руб</li>
-                    </ul>
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div class="accesories"></div>
+                        </div>
+                        <div class="col-md-7">
+                            <ul>
+                                <li>Незамерзайка 120 руб</li>
+                                <li>Cалфетки 50 руб</li>
+                                <li>Ароматизатор 100 руб</li>
+                                <li>Очиститель салона 100 руб</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </section>
 
             <section class="personal-offer">
                 <div class="container">
                     <h2>Получи персональное предложение!</h2>
-                    <p>Заполни форму и получи скидку 30 рублей на первую мойку</p>
+                    <p class="text-center">Заполни форму и получи скидку 30 рублей на первую мойку</p>
                     <form action="">
                         <div class="row">
                             <div class="col-md-10">
                                 <div class="row">
-                                    <div class="col-md-4"><input type="text"></div>
-                                    <div class="col-md-4"><input type="text"></div>
-                                    <div class="col-md-4"><input type="text"></div>
+                                    <div class="col-md-4"><input type="text" placeholder="Ваше имя" value=""></div>
+                                    <div class="col-md-4"><input type="text" placeholder="Телефон" value=""></div>
+                                    <div class="col-md-4"><input type="text" placeholder="E-mail" value=""></div>
                                 </div>
                             </div>
                             <div class="col-md-2">
                                 <div class="btn btn-default">Отправить</div>
                             </div>
-                            <div class="col-md-12">
-                                <input type="checkbox" id="agree" name="agree">
+                            <div class="col-md-12 text-center">
+                                <input type="checkbox" id="agree" name="agree" checked>
                                 <label for="agree">Согласен получать новости и акции</label>
                             </div>
                         </div>
@@ -408,37 +427,44 @@
 
             <section class="faq">
                 <div class="container">
-                    <h2>Вопрос-ответ</h2>
-                    <ul>
-                        <li>
-                            <div class="h3">Могу ли я расплатиться картой?</div>
-                            <p>Терминал принимает банковские карты, есть бесконтактная оплата, а так же , аппарат принимает купюры номиналом 10, 50, 100 рублей. Будьте внимательны: аппарат сдачи не выдаёт. Используйте оплаченное время максимально эффективно.</p>
-                        </li>
-                        <li>
-                            <div class="h3">Как пользоваться Turbo кнопкой?</div>
-                            <p>Выбираете нужный режим и нажимаете кнопку Turbo</p>
-                        </li>
-                        <li>
-                            <div class="h3">Как работает воск?</div>
-                            <p>Воск при высыхании образует защитную пленку на поверхности лакокрасочного покрытия. Это на некоторое время помогает предотвратить прилипание льда и грязи к поверхности автомобиля. Важно растереть воск по поверхности автомобиля максимально быстро, иначе при высыхании он оставит неприятные разводы.</p>
-                        </li>
-                        <li>
-                            <div class="h3">Могу ли я использовать свои губки щетки ведра?</div>
-                            <p>Для этого на мойке самообслуживания находится специальная протирочная зона</p>
-                        </li>
-                        <li>
-                            <div class="h3">Как работает кнопка Стоп?</div>
-                            <p>Приостанавливает работу программы для смены режима.</p>
-                        </li>
-                        <li>
-                            <div class="h3">Как отмыть сложные загрязнения?</div>
-                            <p>При сильных или старых загрязнениях воспользуйтесь щеткой или турбо режимом. Выберите программу щетка плюс пена, она хорошо подходит для удаления очень сильных загрязнений. Смойте пену холодной или горячей водой. Для защиты поверхности автомобиля от обледенения щебня и реагентов нанесите защитный слой воска. При регулярном использовании защита покрытия работает эффективнее. Для блеска без разводов воспользуйтесь программой сушка и блеск.</p>
-                        </li>
-                        <li>
-                            <div class="h3">Как помыть машину быстрее всего?</div>
-                            <p>При легком или частичном загрязнении воспользуйтесь режимом быстрая мойка. Включите программу вода + шампунь, смойте основною грязь, затем ополосните машину холодной и горячей водой.</p>
-                        </li>
-                    </ul>
+                    <h2>Вопрос-ответ:</h2>
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div class="car-bg"></div>
+                        </div>
+                        <div class="col-md-7">
+                            <ul>
+                                <li>
+                                    <div class="h3">Могу ли я расплатиться картой?</div>
+                                    <p>Терминал принимает банковские карты, есть бесконтактная оплата, а так же , аппарат принимает купюры номиналом 10, 50, 100 рублей. Будьте внимательны: аппарат сдачи не выдаёт. Используйте оплаченное время максимально эффективно.</p>
+                                </li>
+                                <li>
+                                    <div class="h3">Как пользоваться Turbo кнопкой?</div>
+                                    <p>Выбираете нужный режим и нажимаете кнопку Turbo</p>
+                                </li>
+                                <li>
+                                    <div class="h3">Как работает воск?</div>
+                                    <p>Воск при высыхании образует защитную пленку на поверхности лакокрасочного покрытия. Это на некоторое время помогает предотвратить прилипание льда и грязи к поверхности автомобиля. Важно растереть воск по поверхности автомобиля максимально быстро, иначе при высыхании он оставит неприятные разводы.</p>
+                                </li>
+                                <li>
+                                    <div class="h3">Могу ли я использовать свои губки щетки ведра?</div>
+                                    <p>Для этого на мойке самообслуживания находится специальная протирочная зона</p>
+                                </li>
+                                <li>
+                                    <div class="h3">Как работает кнопка Стоп?</div>
+                                    <p>Приостанавливает работу программы для смены режима.</p>
+                                </li>
+                                <li>
+                                    <div class="h3">Как отмыть сложные загрязнения?</div>
+                                    <p>При сильных или старых загрязнениях воспользуйтесь щеткой или турбо режимом. Выберите программу щетка плюс пена, она хорошо подходит для удаления очень сильных загрязнений. Смойте пену холодной или горячей водой. Для защиты поверхности автомобиля от обледенения щебня и реагентов нанесите защитный слой воска. При регулярном использовании защита покрытия работает эффективнее. Для блеска без разводов воспользуйтесь программой сушка и блеск.</p>
+                                </li>
+                                <li>
+                                    <div class="h3">Как помыть машину быстрее всего?</div>
+                                    <p>При легком или частичном загрязнении воспользуйтесь режимом быстрая мойка. Включите программу вода + шампунь, смойте основною грязь, затем ополосните машину холодной и горячей водой.</p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </section>
 
@@ -535,7 +561,7 @@
                     <div id="bottom-map"></div>
                 </div>
             </section>
-    
+
             <!-- FOOTER -->
             <footer>
                 <div class="container">

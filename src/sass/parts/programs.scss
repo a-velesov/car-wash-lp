@@ -1,0 +1,35 @@
+.programs{
+    position: relative;
+    background: #d5ebfe;
+    color: #1f81c4;
+    padding-bottom: 168px;
+
+    &:before{
+        display: block;
+        content: "";
+        position: absolute;
+        left: 0px;
+        right: 0px;
+        background-repeat: no-repeat;
+        background-image: url("../img/svg/programs_bg-top.svg");
+        bottom: 100%;
+        height: 100px;
+        background-size: 100% 100%;
+    }
+
+    h2, .h2{
+        font-size: 2.9em;
+        line-height: 1em;
+        padding-top: 100px;
+    }
+
+    .swiper-container{
+        margin-top: 92px;
+        margin-bottom: 75px;
+        max-width: 970px;
+
+        .swiper-slide{
+            text-align: center;
+        }
+    }
+}
