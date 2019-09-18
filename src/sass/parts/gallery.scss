@@ -2,6 +2,7 @@
     position: relative;
     background: #1768bc;
     color: #fff;
+    padding-bottom: 180px;
 
     &:before{
         display: block;
@@ -14,5 +15,37 @@
         bottom: 100%;
         height: 100px;
         background-size: 100% 100%;
+    }
+
+    h2, .h2{
+        padding-top: 54px;
+        font-size: 3em;
+        padding-bottom: 20px;
+    }
+
+    .item{
+        width: 90%;
+        margin: 0 auto;
+
+        .img{
+            padding-top: 100%;
+            position: relative;
+            margin-bottom: 30px;
+
+            &>div{
+                position: absolute;
+                top: 0px;
+                right: 0px;
+                bottom: 0px;
+                left: 0px;
+                background-size: cover;
+                background-position: center;
+            }
+        }
+        .col-md-8{
+            .img{
+                padding-top: 47.8%;
+            }
+        }
     }
 }

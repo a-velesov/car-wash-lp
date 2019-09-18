@@ -2,6 +2,7 @@
     position: relative;
     background: #fff;
     color: #1768bc;
+    padding-bottom: 106px;
 
     &:before{
         display: block;
@@ -14,5 +15,37 @@
         bottom: 100%;
         height: 100px;
         background-size: 100% 100%;
+    }
+
+    h2, .h2{
+        position: relative;
+        font-size: 3em;
+        top: -55px;
+        margin: 0px;
+    }
+
+    .swiper-container{
+        .item{
+            max-width: 1000px;
+            margin: 0 auto;
+            font-size: 1.34em;
+            line-height: 1.34em;
+
+            .title{
+                font-weight: bold;
+                font-size: 1.4em;
+                line-height: 1.2em;
+                margin-bottom: 18px;
+            }
+            .text{
+                margin-bottom: 26px;
+            }
+            .author{
+                font-weight: bold;
+            }
+        }
+    }
+    .btn{
+        margin-top: 80px;
     }
 }
