@@ -2,6 +2,7 @@
     position: relative;
     background: #fff;
     color: #1768bc;
+    padding-bottom: 50px;
 
     &:before{
         display: block;
@@ -14,5 +15,60 @@
         bottom: 100%;
         height: 100px;
         background-size: 100% 100%;
+    }
+
+    h2, .h2{
+        margin: 0px;
+        position: relative;
+        top: -60px;
+        font-size: 3em;
+        line-height: 1.2em;
+
+    }
+
+    ul{
+        margin: -14px auto 0px;
+        padding:0px;
+        display: flex;
+        width: 100%;
+        max-width: 81%;
+        list-style-type: none;
+        text-transform: uppercase;
+
+        li{
+            flex: 0 0 50%;
+            max-width: 50%;
+            text-align: center;
+            font-weight: bold;
+            font-size: 1.3em;
+
+            a{
+                color: #2ecc71;
+                text-decoration: none;
+            }
+
+            i{
+                font-family: 'icomoon';
+                font-style: normal;
+                display: block;
+                width: 100%;
+                text-align: center;
+                font-size: 52px;
+                line-height: 52px;
+                font-weight: 400;
+                margin-bottom: 24px;
+
+                &.vk{
+                    font-size: 84px;
+                }
+
+                &.vk:before{
+                    content: "\e916";
+                }
+                &.insta:before{
+                    content: "\e903";
+                }
+            }
+        }
     }
 }

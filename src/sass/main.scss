@@ -1,5 +1,5 @@
 //ALSSchlangeslab font
-@import "vendor/ALSSchlangeslab.scss";
+@import "vendor/ALSSchlangesans.scss";
 
 //Icons font
 @import "vendor/iconsSet.scss";
@@ -54,3 +54,6 @@
 
 //map
 @import "parts/map.scss";
+
+// after
+@import "after.scss";

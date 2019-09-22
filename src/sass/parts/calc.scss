@@ -220,4 +220,85 @@
         top: 90%;
         z-index: 1;
     }
+    label{
+        position: relative;
+
+        .calc-popup{
+            position: absolute;
+            width: 320px;
+            height: 78px;
+            top: 100%;
+            left: 50%;
+            margin-left: -160px;
+            z-index: 11;
+            padding-top: 18px;       
+
+            .counter{
+                display: flex;
+                justify-content: center;
+                height: 100%;
+                background: #cbefff;
+                width: fit-content;
+                margin: 0 auto;
+                align-items: center;
+                padding: 10px 40px;
+                border-radius: 10px;
+                position: relative;
+                font-weight: bold;
+
+                &:before{
+                    content: "";
+                    width: 0;
+                    height: 0;
+                    border-style: solid;
+                    border-width: 0 18px 18px 18px;
+                    border-color: transparent transparent #cbefff transparent;
+                    position: absolute;
+                    left: 50%;
+                    bottom: 100%;
+                    margin-left: -18px;
+                }
+
+                div{
+                    padding: 0px;
+                    font-size: 1.2rem;                
+                }
+            }
+
+            button{
+                width: 40px;
+                height: 40px;
+                background: transparent;
+                border: none;
+
+                &:before{
+                    content: "";
+                    width: 0;
+                    height: 0;
+                    border-style: solid;
+                    border-width: 18px 18px 18px 0;
+                    border-color: transparent #2ecc71 transparent transparent;
+                    display: block;
+                    margin: 0 auto;
+                }
+
+                &:hover:before{
+                    border-color: transparent #b4d004 transparent transparent;
+                }
+
+                &~button{
+                    &:before{
+                        width: 0;
+                        height: 0;
+                        border-style: solid;
+                        border-width: 18px 0 18px 18px;
+                        border-color: transparent transparent transparent #2ecc71;
+                    }
+                    &:hover:before{
+                        border-color: transparent transparent transparent #b4d004;
+                    }
+                }
+            }
+        }
+    }
 }

@@ -1,5 +1,5 @@
 body{
-    font-family: 'ALSSchlangeslab';
+    font-family: 'ALSSchlangesans';
 }
 a{
     transition: color .3s;
@@ -17,6 +17,9 @@ h2, .h2{
     line-height: 1em;
     padding: 16px 42px;
     border-radius: 10px;
+}
+.btn.btn-default:hover{
+    background: #b4d004;
 }
 
 .text-left{

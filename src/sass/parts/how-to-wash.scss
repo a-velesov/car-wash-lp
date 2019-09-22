@@ -78,16 +78,18 @@
                 background-size: cover;
 
                 &:after{
-                    content: "";
-                    background-image: url("../img/svg/arrow.svg");
-                    background-size: 100%;
+                    font-family: 'icomoon';
+                    content: "\e90d";
                     display: block;
+                    font-size: 34px;
                     width: 35px;
                     height: 18px;
+                    line-height: 18px;
                     position: absolute;
                     top: 50%;
                     left: 100%;
                     margin: -8px 0px 0px -7px;
+                    color: #1c6cb5;
                 }
             }
 
@@ -121,28 +123,31 @@
             padding: 32px 0px 0px 0px;
 
             &:before{
-                content: "";
-                background-image: url("../img/svg/pistol.svg");
-                background-repeat: no-repeat;
-                background-size: 100%;
+                content: "\e90c";
+                font-family: 'icomoon';
                 display: block;
                 width: 250px;
                 height: 45px;
                 position: absolute;
-                left: -100px;
-                top: 15px;
+                left: -95px;
+                top: 6px;
+                font-size: 250px;
+                line-height: 50px;
             }
 
             &:nth-child(1){
                 &:before{
+                    color: #ed1f24;
                 }
             }
             &:nth-child(2){
                 &:before{
+                    color: #0a5192;
                 }
             }
             &:nth-child(3){
                 &:before{
+                    color: #aeca0b;
                 }
             }
         }

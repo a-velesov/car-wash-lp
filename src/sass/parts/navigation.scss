@@ -3,7 +3,12 @@ header, footer{
     color: #fff;
     height: 128px;
     overflow: hidden;
+    position: relative;
     z-index: 10;
+    background-image: url("../img/header-left-bg.png");
+    background-size: auto 165px;
+    background-position: 0% 50%;
+    background-repeat: no-repeat;
 
     @media screen and (min-width: 1200px){
         .col-logo{
@@ -75,6 +80,24 @@ header, footer{
     .col-time{
         text-align: center;
     }
+
+    &:before, &:after{
+        content: "";
+    }
+    &:before{
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+
+        background-image: url("../img/header-right-bg.png");
+        background-size: auto 165px;
+        background-position: 100% 50%;
+        background-repeat: no-repeat;
+    }
+    &:after{
+    }
 }
 
 header{
@@ -82,6 +105,10 @@ header{
     top: 0px;
     left: 0px;
     right: 0px;
+}
+
+footer{
+    border-top: 8px solid #1768bc;
 }
 
 nav.navbar{

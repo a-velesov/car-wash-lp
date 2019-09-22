@@ -1,0 +1,30 @@
+@media screen and (max-width: 991px){
+    section{
+        &.top-carousel,
+        &.who-we-are,
+        &.teasers-donut,
+        &.how-to-wash,
+        &.calc,
+        &.programs,
+        &.need-accessories,
+        &.personal-offer,
+        &.faq,
+        &.reviews,
+        &.gallery,
+        &.social,
+        &.map{
+            padding-top: 15px;
+
+            &:before, &:after{
+                display:none;
+            }
+
+            h1, .h1,
+            h2, .h2{
+                top: 0px;
+                margin-bottom: 15px;
+                padding-top: 0px;
+            }
+        }
+    }
+}

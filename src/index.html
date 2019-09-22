@@ -104,6 +104,7 @@
             <section class="teasers-donut">
                 <div class="container">
                     <i class="donut-center"></i>
+                    <i class="donut-after"></i>
                     <ul class="donut">
                         <li>
                             <div>
@@ -196,7 +197,7 @@
                         <div class="form-row">
                             <div class="row first-row">
                                 <div class="col-md-3">
-                                    <input name="wash-type" id="type_1" type="radio" checked>
+                                    <input name="wash-type" id="type_1" type="radio" value="Чуть грязная (Пена)" data-price="25" checked>
                                     <label for="type_1">
                                         <i class="little-dirty"></i>
                                         <div>Чуть грязная</div>
@@ -206,7 +207,7 @@
                                     </label>
                                 </div>
                                 <div class="col-md-3">
-                                    <input name="wash-type" id="type_2" type="radio">
+                                    <input name="wash-type" id="type_2" type="radio" value="Сильно грязная (Щетка+пена)" data-price="25">
                                     <label for="type_2">
                                         <i class="very-dirty"></i>
                                         <div>Сильно грязная</div>
@@ -216,7 +217,7 @@
                                     </label>
                                 </div>
                                 <div class="col-md-3">
-                                    <input name="wash-type" id="type_3" type="radio">
+                                    <input name="wash-type" id="type_3" type="radio" value="Зимой (Вода+шампунь)" data-price="25">
                                     <label for="type_3">
                                         <i class="winter"></i>
                                         <div>Зимой</div>
@@ -226,7 +227,7 @@
                                     </label>
                                 </div>
                                 <div class="col-md-3">
-                                    <input name="wash-type" id="type_4" type="radio">
+                                    <input name="wash-type" id="type_4" type="radio" value="Мало времени (Вода+шампунь)" data-price="25">
                                     <label for="type_4">
                                         <i class="small-time"></i>
                                         <div>Мало времени</div>
@@ -236,7 +237,7 @@
                                     </label>
                                 </div>
                             </div>
-                            <input type="hidden" name="wash-type-count" data-price="" value="3" />
+                            <input type="hidden" name="wash-type-count" data-price="25" value="3" />
                         </div>
                         <div class="form-row line">
                             <div class="row">
@@ -244,18 +245,18 @@
                                 <div class="col-md-3">
                                     <div class="row">
                                         <div class="col-md-6">
-                                            <input name="mats" id="mats_y" type="radio">
+                                            <input name="mats" id="mats_y" type="radio" value="Да" data-price="20">
                                             <label for="mats_y">Да</label>
                                         </div>
                                         <div class="col-md-6">
-                                            <input name="mats" id="mats_n" type="radio" checked>
+                                            <input name="mats" id="mats_n" type="radio" value="Нет" data-price="0" checked>
                                             <label for="mats_n">Нет</label>
                                         </div>
                                     </div>
                                     <div class="descr" data-yes="Моем " data-no="Нет, не моем">Нет, не моем</div>
                                 </div>
                             </div>
-                            <input type="hidden" name="mats-count" data-price="20" value="0" />
+                            <input type="hidden" name="mats-count" data-price="0" value="1" />
                         </div>
                         <div class="form-row line">
                             <div class="row">
@@ -263,11 +264,11 @@
                                 <div class="col-md-3">
                                     <div class="row">
                                         <div class="col-md-6">
-                                            <input name="hot" id="hot_y" type="radio" checked>
+                                            <input name="hot" id="hot_y" type="radio" value="Да" data-price="22" checked>
                                             <label for="hot_y">Да</label>
                                         </div>
                                         <div class="col-md-6">
-                                            <input name="hot" id="hot_n" type="radio">
+                                            <input name="hot" id="hot_n" type="radio" value="Нет" data-price="0">
                                             <label for="hot_n">Нет</label>
                                         </div>
                                     </div>
@@ -282,11 +283,11 @@
                                 <div class="col-md-3">
                                     <div class="row">
                                         <div class="col-md-6">
-                                            <input name="cold" id="cold_y" type="radio" checked>
+                                            <input name="cold" id="cold_y" type="radio" value="Да" data-price="20" checked>
                                             <label for="cold_y">Да</label>
                                         </div>
                                         <div class="col-md-6">
-                                            <input name="cold" id="cold_n" type="radio">
+                                            <input name="cold" id="cold_n" type="radio" value="Нет" data-price="0">
                                             <label for="cold_n">Нет</label>
                                         </div>
                                     </div>
@@ -301,11 +302,11 @@
                                 <div class="col-md-3">
                                     <div class="row">
                                         <div class="col-md-6">
-                                            <input name="wax" id="wax_y" type="radio" checked>
+                                            <input name="wax" id="wax_y" type="radio" value="Да" data-price="25" checked>
                                             <label for="wax_y">Да</label>
                                         </div>
                                         <div class="col-md-6">
-                                            <input name="wax" id="wax_n" type="radio">
+                                            <input name="wax" id="wax_n" type="radio" value="Нет" data-price="0">
                                             <label for="wax_n">Нет</label>
                                         </div>
                                     </div>
@@ -320,11 +321,11 @@
                                 <div class="col-md-3">
                                     <div class="row">
                                         <div class="col-md-6">
-                                            <input name="clearw" id="clearw_y" type="radio" checked>
+                                            <input name="clearw" id="clearw_y" type="radio" value="Да" data-price="22" checked>
                                             <label for="clearw_y">Да</label>
                                         </div>
                                         <div class="col-md-6">
-                                            <input name="clearw" id="clearw_n" type="radio">
+                                            <input name="clearw" id="clearw_n" type="radio" value="Нет" data-price="0">
                                             <label for="clearw_n">Нет</label>
                                         </div>
                                     </div>
@@ -339,11 +340,11 @@
                                 <div class="col-md-3">
                                     <div class="row">
                                         <div class="col-md-6">
-                                            <input name="vacuum" id="vacuum_y" type="radio" checked>
+                                            <input name="vacuum" id="vacuum_y" type="radio" value="Да" data-price="10" checked>
                                             <label for="vacuum_y">Да</label>
                                         </div>
                                         <div class="col-md-6">
-                                            <input name="vacuum" id="vacuum_n" type="radio">
+                                            <input name="vacuum" id="vacuum_n" type="radio" value="Нет" data-price="0">
                                             <label for="vacuum_n">Нет</label>
                                         </div>
                                     </div>
@@ -356,6 +357,9 @@
                 </div>
                 <div class="calc-car"></div>
                 <div class="calc-total"><i></i> Примерная стоимость мойки <span>145 рублей</span></div>
+                
+                
+                <div><span></span> мин.</div>
             </section>
 
             <section class="programs">
@@ -575,16 +579,14 @@
                 <div class="container">
                     <h2>Подпишись и получай<br> последние новости, акции и скидки</h2>
                     <ul>
-                        <li><a href="#"><i></i> Мы во вконтакте</a></li>
-                        <li><a href="#"><i></i> Мы в инстаграм</a></li>
+                        <li><a href="#"><i class="vk"></i> Мы во вконтакте</a></li>
+                        <li><a href="#"><i class="insta"></i> Мы в инстаграм</a></li>
                     </ul>
                 </div>
             </section>
 
             <section class="map">
-                <div class="container">
-                    <div id="bottom-map"></div>
-                </div>
+                <div id="bottom-map"></div>
             </section>
 
             <!-- FOOTER -->
