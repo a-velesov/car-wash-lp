@@ -1,5 +1,21 @@
 body{
     font-family: 'ALSSchlangesans';
+
+    @media screen and (max-width: 1600px){
+        font-size: 1rem;
+    }
+    @media screen and (max-width: 1229px){
+        font-size: .8rem;
+    }
+    @media screen and (max-width: 991px){
+        font-size: .8rem;
+    }
+    @media screen and (max-width: 767px){
+        // font-size: 1rem;
+    }
+    @media screen and (max-width: 575px){
+        // font-size: .8rem;
+    }
 }
 a{
     transition: color .3s;

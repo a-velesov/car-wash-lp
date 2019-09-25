@@ -9,6 +9,14 @@
     background-image: url("../img/car_bg.png");
     background-position: 50% 100%;
     background-repeat: no-repeat;
+    @media screen and (max-width: 991px){
+        background-size: 100% auto;
+        margin-top: 2px;
+        margin-bottom: 0px;
+    }
+    @media screen and (max-width: 767px){
+        padding-bottom: 25%;
+    }
 
     &:before, &:after{
         display: block;
@@ -17,18 +25,21 @@
         left: 0px;
         right: 0px;
         background-repeat: no-repeat;
+        height: 90px;
+
+        @media screen and (max-width: 1600px){
+            height: 65px;
+        }
     }
 
     &:before{
         background-image: url("../img/svg/who-we-are_bg-top.svg");
         bottom: 100%;
-        height: 90px;
         background-size: 100% 100%;
     }
     &:after{
         background-image: url("../img/svg/who-we-are_bg-bottom_white.svg");
         bottom: 0px;
-        height: 90px;
         background-size: 100% 100%;
     }
 
@@ -38,6 +49,12 @@
     h3, .h3{
         color:#2ecc71;
         font-weight: bold;
+
+        @media screen and (max-width: 991px){
+            text-align: center;
+            margin-top: 25px;
+            margin-bottom: 0px;
+        }
     }
 
     ul{
@@ -48,12 +65,25 @@
         font-weight: bold;
         line-height: 1.2em;
 
+        @media screen and (max-width: 991px){
+            margin: 15px 0px 0px;
+        }
+
         li{
             margin-bottom: 30px;
 
             &:before{
                 content: "\2022";
                 margin-right: 7px;
+            }
+        }
+    }
+
+    @media screen and (max-width: 991px){
+        .text-right{
+            text-align: left!important;
+            h3, .h3{
+                text-align: center!important;
             }
         }
     }

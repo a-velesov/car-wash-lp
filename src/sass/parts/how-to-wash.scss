@@ -8,10 +8,24 @@
     background: linear-gradient(to bottom, #66bfe2 0%,#098bc8 45%,#098bc8 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#66bfe2', endColorstr='#098bc8',GradientType=0 );
 
+    @media screen and (max-width: 991px){
+        padding-top: 25%;
+        padding-bottom: 50px;
+        // margin-top: 242px;
+    }
+
     h2, .h2{
         font-size: 3em;
         line-height: 1.25em;
         margin-bottom: 76px;
+
+        @media screen and (max-width: 380px){
+            font-size: 1.5em;
+            max-width: 160px;
+            margin: 0 auto;
+            line-height: 1.25em;
+            margin-top: 60px;
+        }
     }
 
     &:before{
@@ -43,10 +57,26 @@
             padding-bottom: 22%;
             margin-bottom: 145px;
 
+            @media screen and (max-width: 991px){
+                padding-left: 60px;
+                margin-bottom: 55px;
+            }
+
+            @media screen and (max-width: 767px){
+                padding: 78px 0px 0px;
+                margin: 0px;
+                display: flex;
+                align-items: center;
+                flex-direction: row-reverse;
+                justify-content: flex-end;
+                margin-top: 18px;
+            }
+
             &:before {
                 content: counter(how-to-wash-counter);
                 background-image: url("../img/svg/num-bg.svg");
                 background-repeat: no-repeat;
+                background-size: 100% 100%;
                 display: block;
                 width: 78px;
                 height: 78px;
@@ -59,14 +89,48 @@
                 position: absolute;
                 left: 0px;
                 top: -24px;
+
+                @media screen and (max-width: 991px){
+                    width: 60px;
+                    height: 60px;
+                    line-height: 60px;
+                    top: -20px;
+                }
+                @media screen and (max-width: 767px){
+                    top: 0px;
+                }
             }
 
             h3, .h3{
                 color: #1e274f;
                 font-weight: bold;
+
+                @media screen and (max-width: 991px){
+                    font-size: 1.8em;
+                    line-height: 1em;
+                }
+                @media screen and (max-width: 767px){
+                    position: absolute;
+                    width: 100%;
+                    padding-left: 60px;
+                    line-height: 60px;
+                    top: 0px;
+                }
+                @media screen and (max-width: 480px){
+                    font-size: 1.6em;
+                }
             }
             .text{
                 max-width: 256px;
+
+                @media screen and (max-width: 767px){
+                    padding-left: 10px;
+
+                    p{
+                        line-height: 1em;
+                        margin: 7px 0px;
+                    }
+                }
             }
             .img{
                 position: absolute;
@@ -76,6 +140,13 @@
                 padding-bottom: 60%;
                 background-position: 50%;
                 background-size: cover;
+
+                @media screen and (max-width: 767px){
+                    position: relative;
+                    width: 45%;
+                    flex: 0 0 45%;
+                    padding-bottom: 32%;
+                }
 
                 &:after{
                     font-family: 'icomoon';
@@ -90,6 +161,10 @@
                     left: 100%;
                     margin: -8px 0px 0px -7px;
                     color: #1c6cb5;
+
+                    @media screen and (max-width: 767px){
+                        display: none;
+                    }
                 }
             }
 
@@ -118,6 +193,10 @@
         list-style-type: none;
         margin-top: -10px;
 
+        @media screen and (max-width: 767px){
+            padding-left: 10px;
+        }
+
         li{
             position: relative;
             padding: 32px 0px 0px 0px;
@@ -133,6 +212,21 @@
                 top: 6px;
                 font-size: 250px;
                 line-height: 50px;
+
+                @media screen and (max-width: 991px){
+                    width: 200px;
+                    height: 36px;
+                    font-size: 200px;
+                    line-height: 36px;
+                }
+
+                @media screen and (max-width: 767px){
+                    width: 120px;
+                    height: 26px;
+                    font-size: 120px;
+                    line-height: 26px;
+                    left: 0px;
+                }
             }
 
             &:nth-child(1){

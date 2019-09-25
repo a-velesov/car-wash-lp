@@ -10,7 +10,43 @@ header, footer{
     background-position: 0% 50%;
     background-repeat: no-repeat;
 
-    @media screen and (min-width: 1200px){
+    @media screen and (max-width: 1800px){
+        background-size: 22% 165px;
+    }
+    @media screen and (max-width: 1600px){
+        background-image: none;
+    }
+    @media screen and (max-width: 1229px){
+        // font-size: .7em;
+        height: auto;
+        padding: 5px 0px;
+    }
+    @media screen and (max-width: 575px){
+        // font-size: .6em;
+    }
+
+    &:before{
+        content: "";
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+
+        background-image: url("../img/header-right-bg.png");
+        background-size: auto 165px;
+        background-position: 100% 50%;
+        background-repeat: no-repeat;
+
+        @media screen and (max-width: 1800px){
+            background-size: 22% 165px;
+        }
+        @media screen and (max-width: 1600px){
+            background-image: none;
+        }
+    }
+
+    @media screen and (min-width: 1230px){
         .col-logo{
             flex: 0 0 24%;
             max-width: 24%;
@@ -29,6 +65,15 @@ header, footer{
         }
     }
 
+    @media screen and (max-width: 575px){
+        .col-mmenu,
+        .col-logo,
+        .col-time,
+        .col-contacts{
+            padding: 0px 10px;
+        }
+    }
+
     .row{
         align-items: center;
     }
@@ -37,6 +82,16 @@ header, footer{
         display: flex;
         align-items: center;
         height: 114px;
+
+        @media screen and (max-width: 1229px){
+            height: auto;
+        }
+
+        img{
+            @media screen and (max-width: 1229px){
+                width: 100%;
+            }
+        }
     }
 
     a{
@@ -56,7 +111,9 @@ header, footer{
 
     ul.contacts{
         padding-left: 56px;
-        margin-top: 20px;
+        @media screen and (max-width: 991px){
+            padding-left: 20px;
+        }
          
         li{
             position: relative;
@@ -64,6 +121,15 @@ header, footer{
             line-height: 1.5em;
             font-weight: bold;
 
+            @media screen and (max-width: 575px){
+                font-size: 1em;
+                line-height: 1.5em;
+            }
+            @media screen and (max-width: 360px){
+                line-height: 1.5em;
+                font-size: .75em;
+            }
+            
             a{
                 text-decoration: none;
             }
@@ -73,6 +139,12 @@ header, footer{
                 text-align: center;
                 font-size: 16px;
                 left: -27px;
+
+                @media screen and (max-width: 575px){
+                    font-size: 1em;
+                    font-weight: 400;
+                    left: -20px;
+                }
             }
         }
     }
@@ -80,23 +152,31 @@ header, footer{
     .col-time{
         text-align: center;
     }
+}
 
-    &:before, &:after{
-        content: "";
-    }
-    &:before{
+.menu-o{
+    width: 32px;
+    height: 24px;
+    position: relative;
+    cursor: pointer;
+    margin: 0 auto;
+
+    div{
         position: absolute;
-        top: 0px;
-        right: 0px;
-        bottom: 0px;
+        width: 100%;
+        height: 3px;
+        top: 50%;
         left: 0px;
+        margin-top: -2px;
+        background: #fff;
 
-        background-image: url("../img/header-right-bg.png");
-        background-size: auto 165px;
-        background-position: 100% 50%;
-        background-repeat: no-repeat;
-    }
-    &:after{
+        &:first-child{
+            top: 0px;
+        }
+        &:last-child{
+            top: initial;
+            bottom: 0px;
+        }
     }
 }
 
@@ -105,6 +185,10 @@ header{
     top: 0px;
     left: 0px;
     right: 0px;
+
+    @media screen and (max-width: 991px){
+        position: static;
+    }
 }
 
 footer{
@@ -118,6 +202,15 @@ nav.navbar{
         font-weight: 600;
         justify-content: space-between;
 
+        @media screen and (max-width: 1229px){
+            // font-size: 1.2em;
+            display: block;
+            line-height: 2em;
+        }
+        @media screen and (max-width: 991px){
+            font-size: 1em;
+        }
+
         li{
             a{
                 text-decoration: none;
@@ -129,6 +222,15 @@ nav.navbar{
 i.time24{
     font-size: 56px;
     color: #76c201;
+
+    @media screen and (max-width: 991px){
+        font-size: 32px;
+        position: relative;
+        left: -12px;
+    }
+    @media screen and (max-width: 360px){
+        font-size: 20px;
+    }
 }
 i.time24:before{
     content: "\e900";

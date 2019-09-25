@@ -4,12 +4,67 @@
     padding-bottom: 25%;
     margin-bottom: 52px;
 
+    @media screen and (max-width: 1440px){
+        margin-top: -30%;
+        padding-bottom: 100%;
+        margin-bottom: -30%;
+        overflow: hidden;
+    }
+    @media screen and (max-width: 991px){
+        margin-bottom: -25%;
+        margin-top: -25%;
+    }
+    @media screen and (max-width: 380px){
+        padding-bottom: 180%;
+        margin-bottom: -78%;
+    }
+
+    .mobile-bg{
+        position: absolute;
+        left: 0px;
+        width: 100%;
+        display: none;
+        background: #27438c;
+        background: -moz-linear-gradient(top, #27438c 0%, #27438c 17%, #66bfe2 100%);
+        background: -webkit-linear-gradient(top, #27438c 0%,#27438c 17%,#66bfe2 100%);
+        background: linear-gradient(to bottom, #27438c 0%,#27438c 17%,#66bfe2 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#27438c', endColorstr='#66bfe2',GradientType=0 );
+
+        @media screen and (max-width: 991px){
+            top: 25%;
+            height: 51%;
+            display: block;
+
+            &:before{
+                content: "";
+                display: block;
+                position: absolute;
+                top: 0px;
+                right: 0px;
+                bottom: 0px;
+                left: 0px;
+                background-image: url("../img/moika_center-mobile.png");
+                background-position: center;
+                background-repeat: no-repeat;
+            }
+        }
+        @media screen and (max-width: 380px){
+            top: 13.8%;
+            height: 44%;
+            display: block;
+        }
+    }
+
     .container{
         position: absolute;
         top: 0px;
         right: 0px;
         bottom: 0px;
         left: 0px;
+
+        @media screen and (max-width: 991px){
+            max-width: 100%;
+        }
     }
 }
 i.donut-center{
@@ -21,37 +76,82 @@ i.donut-center{
     top: 50%;
     left: 50%;
     margin: -145px 0px 0px -282px;
+    @media screen and (max-width: 991px){
+        background-image: none;
+    }
 }
 i.donut-after{
     display: block;
     background-image: url("../img/donut-bubbles.png");
     width: 100%;
-    height: 436px;
+    height: 100%;
     position: absolute;
     top: 75%;
     left: 0%;
     right: 0%;
+
+    @media screen and (max-width: 1440px){
+        top: initial;
+        bottom: 0px;
+        background: none;
+    }
 
     &:before, &:after{
         content: "";
         display: block;
         position: absolute;
         bottom: 0px;
-        background-size: 100% 100%;
+        background-size: auto 100%;
         background-repeat: no-repeat;
         background-position: center;
     }
     &:before{
         width: 312px;
         height: 733px;
+        max-height: 733px;
         background-image: url("../img/donut-girl.png");
         right: 80%;
+
+        @media screen and (max-width: 1440px){
+            height: 100%;
+            right: initial;
+            left: -10%;
+        }
+        @media screen and (max-width: 767px){
+            height: 50%;
+            width: 172px;
+            left: 0%;
+        }
+        @media screen and (max-width: 480px){
+            width: 90px;
+        }
+        @media screen and (max-width: 380px){
+            width: 90px;
+        }
     }
     &:after{
         width: 333px;
         height: 815px;
+        max-height: 815px;
         background-image: url("../img/donut-man.png");
         left: 80%;
+
+        @media screen and (max-width: 1440px){
+            height: 100%;
+            right: -10%;
+            left: initial;
+        }
+        @media screen and (max-width: 767px){
+            height: 50%;
+            width: 172px;
+            right: 0%;
+        }
+        @media screen and (max-width: 480px){
+            width: 90px;
+        }
+        @media screen and (max-width: 380px){
+            width: 90px;
+        }
     }
 }
 ul.donut{
@@ -63,6 +163,20 @@ ul.donut{
     left: 50%;
     margin-left: 2px;
 
+    @media screen and (max-width: 1229px){
+        font-size: .8em;
+    }
+    @media screen and (max-width: 767px){
+        font-size: .7em;
+    }
+    @media screen and (max-width: 575px){
+        font-size: .45em;
+        margin-left: 5px;
+    }
+    @media screen and (max-width: 380px){
+        top: 35%;
+    }
+
     li{
         background-repeat: no-repeat;
         width: 330px;
@@ -72,6 +186,22 @@ ul.donut{
         transform-origin: 0% 100%;
         transform: rotate(0deg);
         top: -470px;
+
+        @media screen and (max-width: 1229px){
+            width: 220px;
+            height: 314px;
+            top: -314px;
+        }
+        @media screen and (max-width: 767px){
+            width: 146px;
+            height: 210px;
+            top: -210px;
+        }
+        @media screen and (max-width: 575px){
+            width: 97px;
+            height: 140px;
+            top: -140px;
+        }
 
         &>div{
             width: 90%;
@@ -258,6 +388,130 @@ ul.donut{
                 div.title{
                     top: 65%;
                     left: 34px;
+                }
+            }
+        }
+        @media screen and (max-width: 1229px){
+            & div i{
+                margin: -33px 0px 0px -33px;
+                font-size: 60px;
+            }
+            &:nth-child(1) div i{
+
+            }
+            &:nth-child(2) div i{
+                font-size: 70px;
+            }
+            &:nth-child(3) div i{
+                font-size: 58px;
+            }
+            &:nth-child(4) div i{
+                font-size: 99px;
+            }
+            &:nth-child(5) div i{
+                font-size: 59px;
+            }
+            &:nth-child(6) div i{
+                font-size: 62px;
+                &+.title{
+                    left: 42px;
+                }
+            }
+            &:nth-child(7) div i{
+                font-size: 70px;
+            }
+            &:nth-child(8) div i{
+
+            }
+        }
+        @media screen and (max-width: 767px){
+            & div i{
+                margin: -24px 0px 0px -24px;
+                font-size: 45px;
+            }
+            &:nth-child(1) div i{
+                &+.title{
+                    top: 68%;
+                }
+            }
+            &:nth-child(2) div i{
+                font-size: 46px;
+            }
+            &:nth-child(3) div i{
+                font-size: 38px;
+            }
+            &:nth-child(4) div i{
+                font-size: 66px;
+                &+.title{
+                    line-height: 1em;
+                }
+            }
+            &:nth-child(5) div i{
+                font-size: 39px;
+                &+.title{
+                    left: 20px;
+                }
+            }
+            &:nth-child(6) div i{
+                font-size: 41px;
+                left: 55%;
+                &+.title{
+                    left: 28px;
+                }
+            }
+            &:nth-child(7) div i{
+                font-size: 46px;
+            }
+            &:nth-child(8) div i{
+                &+.title{
+                    left: 8px;
+                    top: 65%;
+                }
+            }
+        }
+        @media screen and (max-width: 575px){
+            & div i{
+                margin: -15px 0px 0px -12px;
+                font-size: 30px;
+            }
+            &:nth-child(1) div i{
+                &+.title{
+                    top: 68%;
+                }
+            }
+            &:nth-child(2) div i{
+                font-size: 30px;
+            }
+            &:nth-child(3) div i{
+                font-size: 25px;
+            }
+            &:nth-child(4) div i{
+                font-size: 44px;
+                &+.title{
+                    line-height: 1em;
+                }
+            }
+            &:nth-child(5) div i{
+                font-size: 26px;
+                &+.title{
+                    left: 20px;
+                }
+            }
+            &:nth-child(6) div i{
+                font-size: 27px;
+                left: 55%;
+                &+.title{
+                    left: 28px;
+                }
+            }
+            &:nth-child(7) div i{
+                font-size: 30px;
+            }
+            &:nth-child(8) div i{
+                left: 48%;
+                &+.title{
+                    left: 8px;
+                    top: 65%;
                 }
             }
         }

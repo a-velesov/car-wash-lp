@@ -13,14 +13,21 @@
         <header>
             <div class="container">
                 <div class="row">
-                    <div class="col-md-3 col-logo">
+                    <div class="col-2 col-mmenu d-block d-md-none">
+                        <div class="menu-o">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+                    <div class="col-4 col-md-3 col-logo">
                         <div class="logo">
                             <a href="/">
                                 <img src="img/logo.png" alt="" srcset="img/logo@2x.png 2x">
                             </a>
                         </div>
                     </div>
-                    <div class="col-md-5 col-nav">
+                    <div class="col-md-4 col-nav d-none d-md-block">
                         <nav class="navbar">
                             <ul class="navbar-nav mr-auto">
                                 <li class="nav-item active">
@@ -32,10 +39,10 @@
                             </ul>
                         </nav>
                     </div>
-                    <div class="col-md-1 col-time">
+                    <div class="col-1 col-md-1 col-time">
                         <i class="time24"></i>
                     </div>
-                    <div class="col-md-3 col-contacts">
+                    <div class="col-5 col-md-4 col-contacts">
                         <ul class="contacts">
                             <li><a href="#"><i class="tel"></i> 8 902 374-44-74</a></li>
                             <li><a href="#"><i class="adress"></i> Автомойка на карте</a></li>
@@ -73,9 +80,16 @@
 
             <section class="who-we-are">
                 <div class="container">
-                    <h1>Что такое мойка самообслуживания Portal?</h1>
+                    <h1 class="d-none d-lg-block">Что такое мойка самообслуживания Portal?</h1>
+                    <div class="row d-block d-lg-none">
+                        <br>
+                        <div class="col-12 text-center">
+                            <img class="img-fluid" src="img/bigLogo.png" alt="" srcset="img/bigLogo@2x.png 2x">
+                        </div>
+                        <br>
+                    </div>
                     <div class="row">
-                        <div class="col-md-4 text-left">
+                        <div class="col-md-6 col-lg-4 text-left">
                             <div class="h3">Как это работает:</div>
                             <ul>
                                 <li>Заезжаете в свободный бокс</li>
@@ -85,10 +99,10 @@
                                 <li>Выезжаете на чистой машине с зеркальным блеском</li>
                             </ul>
                         </div>
-                        <div class="col-md-4 text-center">
+                        <div class="col-md-4 text-center d-none d-lg-block">
                             <img class="img-fluid" src="img/bigLogo.png" alt="" srcset="img/bigLogo@2x.png 2x">
                         </div>
-                        <div class="col-md-4 text-right">
+                        <div class="col-md-6 col-lg-4 text-right">
                             <div class="h3">Что вы получаете:</div>
                             <ul>
                                 <li>Чистую машину</li>
@@ -102,6 +116,7 @@
             </section>
 
             <section class="teasers-donut">
+                <div class="mobile-bg"></div>
                 <div class="container">
                     <i class="donut-center"></i>
                     <i class="donut-after"></i>
@@ -196,7 +211,7 @@
                     <form action="/">
                         <div class="form-row">
                             <div class="row first-row">
-                                <div class="col-md-3">
+                                <div class="col-12 col-md-6 col-lg-3">
                                     <input name="wash-type" id="type_1" type="radio" value="Чуть грязная (Пена)" data-price="25" checked>
                                     <label for="type_1">
                                         <i class="little-dirty"></i>
@@ -206,7 +221,7 @@
                                         </div>
                                     </label>
                                 </div>
-                                <div class="col-md-3">
+                                <div class="col-12 col-md-6 col-lg-3">
                                     <input name="wash-type" id="type_2" type="radio" value="Сильно грязная (Щетка+пена)" data-price="25">
                                     <label for="type_2">
                                         <i class="very-dirty"></i>
@@ -216,7 +231,7 @@
                                         </div>
                                     </label>
                                 </div>
-                                <div class="col-md-3">
+                                <div class="col-12 col-md-6 col-lg-3">
                                     <input name="wash-type" id="type_3" type="radio" value="Зимой (Вода+шампунь)" data-price="25">
                                     <label for="type_3">
                                         <i class="winter"></i>
@@ -226,7 +241,7 @@
                                         </div>
                                     </label>
                                 </div>
-                                <div class="col-md-3">
+                                <div class="col-12 col-md-6 col-lg-3">
                                     <input name="wash-type" id="type_4" type="radio" value="Мало времени (Вода+шампунь)" data-price="25">
                                     <label for="type_4">
                                         <i class="small-time"></i>
@@ -241,14 +256,14 @@
                         </div>
                         <div class="form-row line">
                             <div class="row">
-                                <div class="col-md-9 text-right">Коврики моем? 20 р./ мин</div>
-                                <div class="col-md-3">
+                                <div class="col-6 col-md-8 col-lg-9 text-right">Коврики моем? 20 р./ мин</div>
+                                <div class="col-6 col-md-4 col-lg-3">
                                     <div class="row">
-                                        <div class="col-md-6">
+                                        <div class="col-6 col-md-6">
                                             <input name="mats" id="mats_y" type="radio" value="Да" data-price="20">
                                             <label for="mats_y">Да</label>
                                         </div>
-                                        <div class="col-md-6">
+                                        <div class="col-6 col-md-6">
                                             <input name="mats" id="mats_n" type="radio" value="Нет" data-price="0" checked>
                                             <label for="mats_n">Нет</label>
                                         </div>
@@ -260,14 +275,14 @@
                         </div>
                         <div class="form-row line">
                             <div class="row">
-                                <div class="col-md-9 text-right">Смываем всё горячей водой 22р./ мин</div>
-                                <div class="col-md-3">
+                                <div class="col-6 col-md-8 col-lg-9 text-right">Смываем всё горячей водой 22р./ мин</div>
+                                <div class="col-6 col-md-4 col-lg-3">
                                     <div class="row">
-                                        <div class="col-md-6">
+                                        <div class="col-6 col-md-6">
                                             <input name="hot" id="hot_y" type="radio" value="Да" data-price="22" checked>
                                             <label for="hot_y">Да</label>
                                         </div>
-                                        <div class="col-md-6">
+                                        <div class="col-6 col-md-6">
                                             <input name="hot" id="hot_n" type="radio" value="Нет" data-price="0">
                                             <label for="hot_n">Нет</label>
                                         </div>
@@ -279,14 +294,14 @@
                         </div>
                         <div class="form-row line">
                             <div class="row">
-                                <div class="col-md-9 text-right">Смываем все холодной водой 20 р./ мин</div>
-                                <div class="col-md-3">
+                                <div class="col-6 col-md-8 col-lg-9 text-right">Смываем все холодной водой 20 р./ мин</div>
+                                <div class="col-6 col-md-4 col-lg-3">
                                     <div class="row">
-                                        <div class="col-md-6">
+                                        <div class="col-6 col-md-6">
                                             <input name="cold" id="cold_y" type="radio" value="Да" data-price="20" checked>
                                             <label for="cold_y">Да</label>
                                         </div>
-                                        <div class="col-md-6">
+                                        <div class="col-6 col-md-6">
                                             <input name="cold" id="cold_n" type="radio" value="Нет" data-price="0">
                                             <label for="cold_n">Нет</label>
                                         </div>
@@ -298,14 +313,14 @@
                         </div>
                         <div class="form-row line">
                             <div class="row">
-                                <div class="col-md-9 text-right">Наносим воск? 25 р./ мин</div>
-                                <div class="col-md-3">
+                                <div class="col-6 col-md-8 col-lg-9 text-right">Наносим воск? 25 р./ мин</div>
+                                <div class="col-6 col-md-4 col-lg-3">
                                     <div class="row">
-                                        <div class="col-md-6">
+                                        <div class="col-6 col-md-6">
                                             <input name="wax" id="wax_y" type="radio" value="Да" data-price="25" checked>
                                             <label for="wax_y">Да</label>
                                         </div>
-                                        <div class="col-md-6">
+                                        <div class="col-6 col-md-6">
                                             <input name="wax" id="wax_n" type="radio" value="Нет" data-price="0">
                                             <label for="wax_n">Нет</label>
                                         </div>
@@ -317,14 +332,14 @@
                         </div>
                         <div class="form-row line">
                             <div class="row">
-                                <div class="col-md-9 text-right">Смываем очищенной от всех примесей водой? 22 р./ мин</div>
-                                <div class="col-md-3">
+                                <div class="col-6 col-md-8 col-lg-9 text-right">Смываем очищенной от всех примесей водой? 22 р./ мин</div>
+                                <div class="col-6 col-md-4 col-lg-3">
                                     <div class="row">
-                                        <div class="col-md-6">
+                                        <div class="col-6 col-md-6">
                                             <input name="clearw" id="clearw_y" type="radio" value="Да" data-price="22" checked>
                                             <label for="clearw_y">Да</label>
                                         </div>
-                                        <div class="col-md-6">
+                                        <div class="col-6 col-md-6">
                                             <input name="clearw" id="clearw_n" type="radio" value="Нет" data-price="0">
                                             <label for="clearw_n">Нет</label>
                                         </div>
@@ -336,14 +351,14 @@
                         </div>
                         <div class="form-row line">
                             <div class="row">
-                                <div class="col-md-9 text-right">Пылесосить авто будешь? 10 р./ мин</div>
-                                <div class="col-md-3">
+                                <div class="col-6 col-md-8 col-lg-9 text-right">Пылесосить авто будешь? 10 р./ мин</div>
+                                <div class="col-6 col-md-4 col-lg-3">
                                     <div class="row">
-                                        <div class="col-md-6">
+                                        <div class="col-6 col-md-6">
                                             <input name="vacuum" id="vacuum_y" type="radio" value="Да" data-price="10" checked>
                                             <label for="vacuum_y">Да</label>
                                         </div>
-                                        <div class="col-md-6">
+                                        <div class="col-6 col-md-6">
                                             <input name="vacuum" id="vacuum_n" type="radio" value="Нет" data-price="0">
                                             <label for="vacuum_n">Нет</label>
                                         </div>
@@ -357,9 +372,6 @@
                 </div>
                 <div class="calc-car"></div>
                 <div class="calc-total"><i></i> Примерная стоимость мойки <span>145 рублей</span></div>
-                
-                
-                <div><span></span> мин.</div>
             </section>
 
             <section class="programs">
@@ -538,27 +550,27 @@
                             <div class="swiper-slide">
                                 <div class="item">
                                     <div class="row">
-                                        <div class="col-md-8">
+                                        <div class="col-12 col-md-8">
                                             <div class="img">
                                                 <div style="background-image: url('img/how-to-wash_003.jpg');"></div>
                                             </div>
                                         </div>
-                                        <div class="col-md-4">
+                                        <div class="col-6 col-md-4">
                                             <div class="img">
                                                 <div style="background-image: url('img/how-to-wash_001.jpg');"></div>
                                             </div>
                                         </div>
-                                        <div class="col-md-4">
+                                        <div class="col-6 col-md-4">
                                             <div class="img">
                                                 <div style="background-image: url('img/how-to-wash_002.jpg');"></div>
                                             </div>
                                         </div>
-                                        <div class="col-md-4">
+                                        <div class="col-6 col-md-4">
                                             <div class="img">
                                                 <div style="background-image: url('img/how-to-wash_003.jpg');"></div>
                                             </div>
                                         </div>
-                                        <div class="col-md-4">
+                                        <div class="col-6 col-md-4">
                                             <div class="img">
                                                 <div style="background-image: url('img/how-to-wash_002.jpg');"></div>
                                             </div>
@@ -593,14 +605,21 @@
             <footer>
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-3 col-logo">
+                        <div class="col-2 col-mmenu d-block d-md-none">
+                            <div class="menu-o">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </div>
+                        </div>
+                        <div class="col-4 col-md-3 col-logo">
                             <div class="logo">
                                 <a href="/">
                                     <img src="img/logo.png" alt="" srcset="img/logo@2x.png 2x">
                                 </a>
                             </div>
                         </div>
-                        <div class="col-md-5 col-nav">
+                        <div class="col-md-4 col-nav d-none d-md-block">
                             <nav class="navbar">
                                 <ul class="navbar-nav mr-auto">
                                     <li class="nav-item active">
@@ -612,10 +631,10 @@
                                 </ul>
                             </nav>
                         </div>
-                        <div class="col-md-1 col-time">
+                        <div class="col-1 col-md-1 col-time">
                             <i class="time24"></i>
                         </div>
-                        <div class="col-md-3 col-contacts">
+                        <div class="col-5 col-md-4 col-contacts">
                             <ul class="contacts">
                                 <li><a href="#"><i class="tel"></i> 8 902 374-44-74</a></li>
                                 <li><a href="#"><i class="adress"></i> Автомойка на карте</a></li>

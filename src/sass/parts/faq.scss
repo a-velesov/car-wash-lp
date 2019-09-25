@@ -4,6 +4,11 @@
     color: #fff;
     padding: 105px 0px 116px;
 
+    @media screen and (max-width: 991px){
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
     &:before{
         display: block;
         content: "";
@@ -64,5 +69,9 @@
         top: 30px;
         left: -200px;
         right: -20px;
+
+        @media screen and (max-width: 991px){
+            display: none;
+        }
     }
 }

@@ -8,6 +8,11 @@
     background-size: 100% auto;
     padding-bottom: 332px;
 
+    @media screen and (max-width: 991px){
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
     &:before{
         display: block;
         content: "";

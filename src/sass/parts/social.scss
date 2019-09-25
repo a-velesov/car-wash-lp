@@ -4,6 +4,11 @@
     color: #1768bc;
     padding-bottom: 50px;
 
+    @media screen and (max-width: 991px){
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
     &:before{
         display: block;
         content: "";
