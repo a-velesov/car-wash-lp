@@ -2,6 +2,19 @@
 //=../js/vendor/swiper.min.js
 
 $(document).ready(() => {
+    function swiperButtonsMobile(el){
+        if(window.innerWidth <= 992){
+            let prevEl = el.navigation.prevEl,
+                nextEl = el.navigation.nextEl,
+                slider = el.el;
+    
+            title = $(slider).parents('section').find('h2, .h2');
+            if($(title).length){
+                $(title).append(prevEl).append(nextEl).addClass('swButtons');
+            }
+        }
+    }
+
     //top carousel init
     let topCarousel = new Swiper ('.top-carousel .swiper-container', {
         loop: true,
@@ -21,16 +34,18 @@ $(document).ready(() => {
             nextEl: '.programs .swiper-button-next',
         }
     });
+    swiperButtonsMobile(programsCarousel);
 
     //reviews carousel init
     let reviewsCarousel = new Swiper ('.reviews .swiper-container', {
         loop: true,
         autoplay: true,
         navigation: {
-            prevEl: '.reviews .swiper-button-prev',
-            nextEl: '.reviews .swiper-button-next',
+            prevEl: '.reviews .swiper-button-prev, .reviews .swiper-button-prev.mobile',
+            nextEl: '.reviews .swiper-button-next, .reviews .swiper-button-next.mobile',
         }
     });
+    swiperButtonsMobile(reviewsCarousel);
 
     //gallery carousel init
     let galleryCarousel = new Swiper ('.gallery .swiper-container', {
@@ -41,6 +56,7 @@ $(document).ready(() => {
             nextEl: '.gallery .swiper-button-next',
         }
     });
+    swiperButtonsMobile(galleryCarousel);
 
     function initIndexMap(center, zoom) {
         if (null == window.bYandexMapScriptsLoaded) {
@@ -166,4 +182,24 @@ $(document).ready(() => {
 	});
 
     doCalc();
+
+    $(".navbar-nav a.anchor, .contacts a.anchor").on("click", (e) => {
+        var anchor = $(e.currentTarget);
+        // console.log(anchor);
+        
+		$('html, body').stop().animate({
+			scrollTop: $(anchor.attr('href')).offset().top
+		}, 777);
+		e.preventDefault();
+		return false;
+    });
+    
+    $(".menu-o").on("click", (e) => {
+        const opener = $(e.currentTarget);
+        let leftOffset = opener.offset().left+opener.width();
+
+        $('.m-menu').toggleClass('show').css({
+            'paddingLeft': leftOffset+'px'
+        });
+    });
 });

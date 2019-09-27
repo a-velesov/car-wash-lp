@@ -5,8 +5,11 @@
     padding-bottom: 168px;
 
     @media screen and (max-width: 991px){
-        padding-top: 50px;
+        padding-top: 110px;
         padding-bottom: 50px;
+    }
+    @media screen and (max-width: 767px){
+        font-size: .8em;
     }
 
     &:before{
@@ -26,12 +29,19 @@
         font-size: 2.9em;
         line-height: 1em;
         padding-top: 100px;
+        @media screen and (max-width: 767px){
+            font-size: 2em;
+        }
     }
 
     .swiper-container{
         margin-top: 92px;
         margin-bottom: 75px;
         max-width: 970px;
+
+        @media screen and (max-width: 767px){
+            margin-top: 0px;
+        }
 
         .swiper-slide{
             text-align: center;

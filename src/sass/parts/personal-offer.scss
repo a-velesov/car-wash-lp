@@ -10,7 +10,21 @@
 
     @media screen and (max-width: 991px){
         padding-top: 50px;
-        padding-bottom: 50px;
+        padding-bottom: 20%;
+        background-position: 0% 99%;
+    }
+    @media screen and (max-width: 767px){
+        background-size: auto 26%;
+        background-position: center 99%;   
+        font-size: .8em; 
+    }
+    @media screen and (max-width: 575px){
+        background-size: auto 26%;  
+        padding-bottom: 26%;
+    }
+    @media screen and (max-width: 480px){
+        background-size: auto 16%;
+        padding-bottom: 32%;
     }
 
     &:before{
@@ -31,6 +45,10 @@
         position: relative;
         top: -20px;
         font-size: 3em;
+
+        @media screen and (max-width: 767px){
+            line-height: 1em;              
+        }
     }
 
     p{
@@ -54,9 +72,19 @@
             &::placeholder{
                 color: #2ecc71;
             }
+
+            @media screen and (max-width: 991px){
+                padding: 7px 10px;
+            }
+            @media screen and (max-width: 767px){
+                margin-bottom: 10px;
+            }
         }
         .btn{
-
+            width: 100%;
+            @media screen and (max-width: 991px){
+                padding: 13px 12px;
+            }
         }
         input[type=checkbox]{
             display: none;
@@ -68,6 +96,14 @@
                 margin-top: 46px;
                 position: relative;
                 padding-left: 40px;
+
+                @media screen and (max-width: 767px){
+                    max-width: 275px;
+                    padding-left: 38px;
+                    font-size: 1.4em;
+                    line-height: 1em;
+                    margin-top: 25px;                
+                }
 
                 &:before{
                     content: "";

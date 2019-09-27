@@ -27,6 +27,10 @@
         font-size: 3em;
         top: -55px;
         margin: 0px;
+        @media screen and (max-width: 767px){
+            font-size: 2.4em;
+            line-height: 1em;         
+        }
     }
 
     .swiper-container{

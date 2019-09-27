@@ -6,7 +6,7 @@
 
         <title>Автомойка "Portal"</title>
 
-        <link rel="stylesheet" type="text/css" media="screen" href="/css/main.css" />
+        <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
     </head>
 
     <body>
@@ -31,10 +31,10 @@
                         <nav class="navbar">
                             <ul class="navbar-nav mr-auto">
                                 <li class="nav-item active">
-                                    <a class="nav-link" href="#">Рассчитай стоимость своей мойки</a>
+                                    <a class="nav-link anchor" href="#calc-section">Рассчитай стоимость своей мойки</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Фотогалерея</a>
+                                    <a class="nav-link anchor" href="#gallery-section">Фотогалерея</a>
                                 </li>
                             </ul>
                         </nav>
@@ -44,12 +44,21 @@
                     </div>
                     <div class="col-5 col-md-4 col-contacts">
                         <ul class="contacts">
-                            <li><a href="#"><i class="tel"></i> 8 902 374-44-74</a></li>
-                            <li><a href="#"><i class="adress"></i> Автомойка на карте</a></li>
-                            <li><a href="#"><i class="insta"></i> Мы в инстаграм</a></li>
+                            <li><a href="tel:89023744474"><i class="tel"></i> 8 902 374-44-74</a></li>
+                            <li><a class="anchor" href="#map-section"><i class="adress"></i> Автомойка на карте</a></li>
+                            <li><a target="_blank" href="https://instagram.com"><i class="insta"></i> Мы в инстаграм</a></li>
                         </ul>
                     </div>
                 </div>
+            </div>
+            <div class="m-menu">
+                <ul>
+                    <li><a href="tel:89023744474"><i class="tel"></i> 8 902 374-44-74</a></li>
+                    <li><a class="anchor" href="#map-section"><i class="adress"></i> Автомойка на карте</a></li>
+                    <li><a target="_blank" href="https://instagram.com"><i class="insta"></i> Мы в инстаграм</a></li>
+                    <li><a class="anchor" href="#calc-section"><i class="calc-icon"></i> Рассчитай стоимость своей мойки</a></li>
+                    <li><a class="anchor" href="#gallery-section"><i class="photo"></i> Фотогалерея</a></li>
+                </ul>
             </div>
         </header>
 
@@ -205,7 +214,7 @@
                 </div>
             </section>
 
-            <section class="calc">
+            <section class="calc" id="calc-section">
                 <div class="container">
                     <h2>Рассчитай стоимость твоей мойки.</h2>
                     <form action="/">
@@ -422,14 +431,16 @@
                     <p class="text-center">Заполни форму и получи скидку 30 рублей на первую мойку</p>
                     <form action="">
                         <div class="row">
-                            <div class="col-md-10">
-                                <div class="row">
-                                    <div class="col-md-4"><input type="text" placeholder="Ваше имя" value=""></div>
-                                    <div class="col-md-4"><input type="text" placeholder="Телефон" value=""></div>
-                                    <div class="col-md-4"><input type="text" placeholder="E-mail" value=""></div>
-                                </div>
+                            <div class="col-md-3">
+                                <input type="text" placeholder="Ваше имя" value="">
                             </div>
-                            <div class="col-md-2">
+                            <div class="col-md-3">
+                                <input type="text" placeholder="Телефон" value="">
+                            </div>
+                            <div class="col-md-3">
+                                <input type="text" placeholder="E-mail" value="">
+                            </div>
+                            <div class="col-md-3">
                                 <div class="btn btn-default">Отправить</div>
                             </div>
                             <div class="col-md-12 text-center">
@@ -445,10 +456,10 @@
                 <div class="container">
                     <h2>Вопрос-ответ:</h2>
                     <div class="row">
-                        <div class="col-md-5">
+                        <div class="col-md-5 d-none d-lg-block">
                             <div class="car-bg"></div>
                         </div>
-                        <div class="col-md-7">
+                        <div class="col-12 col-lg-7">
                             <ul>
                                 <li>
                                     <div class="h3">Могу ли я расплатиться картой?</div>
@@ -539,7 +550,7 @@
                 </div>
             </section>
 
-            <section class="gallery">
+            <section class="gallery" id="gallery-section">
                 <div class="container">
                     <h2>Наша фотогалерея</h2>
                 
@@ -597,7 +608,7 @@
                 </div>
             </section>
 
-            <section class="map">
+            <section class="map" id="map-section">
                 <div id="bottom-map"></div>
             </section>
 
@@ -623,10 +634,10 @@
                             <nav class="navbar">
                                 <ul class="navbar-nav mr-auto">
                                     <li class="nav-item active">
-                                        <a class="nav-link" href="#">Рассчитай стоимость своей мойки</a>
+                                        <a class="nav-link anchor" href="#calc-section">Рассчитай стоимость своей мойки</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="nav-link" href="#">Фотогалерея</a>
+                                        <a class="nav-link anchor" href="#gallery-section">Фотогалерея</a>
                                     </li>
                                 </ul>
                             </nav>
@@ -636,9 +647,9 @@
                         </div>
                         <div class="col-5 col-md-4 col-contacts">
                             <ul class="contacts">
-                                <li><a href="#"><i class="tel"></i> 8 902 374-44-74</a></li>
-                                <li><a href="#"><i class="adress"></i> Автомойка на карте</a></li>
-                                <li><a href="#"><i class="insta"></i> Мы в инстаграм</a></li>
+                                <li><a href="tel:89023744474"><i class="tel"></i> 8 902 374-44-74</a></li>
+                                <li><a class="anchor" href="#map-section"><i class="adress"></i> Автомойка на карте</a></li>
+                                <li><a target="_blank" href="https://instagram.com"><i class="insta"></i> Мы в инстаграм</a></li>
                             </ul>
                         </div>
                     </div>
@@ -646,6 +657,6 @@
             </footer>
         </main>
 
-        <script src="/js/main.js"></script>
+        <script src="js/main.js"></script>
     </body>
 </html>

@@ -42,7 +42,7 @@ header, footer{
             background-size: 22% 165px;
         }
         @media screen and (max-width: 1600px){
-            background-image: none;
+            display: none;
         }
     }
 
@@ -156,10 +156,11 @@ header, footer{
 
 .menu-o{
     width: 32px;
-    height: 24px;
+    height: 20px;
     position: relative;
     cursor: pointer;
     margin: 0 auto;
+    z-index: 3;
 
     div{
         position: absolute;
@@ -169,6 +170,7 @@ header, footer{
         left: 0px;
         margin-top: -2px;
         background: #fff;
+        border-radius: 2px;
 
         &:first-child{
             top: 0px;
@@ -193,6 +195,64 @@ header{
 
 footer{
     border-top: 8px solid #1768bc;
+    @media screen and (max-width: 767px){
+        font-size: 1rem;
+        padding: 10% 0px 10%;
+        background-image: url("../img/header-left-bg.png");
+        background-size: 50% auto;
+        background-position: 0% 0%;
+
+        &:before{
+            display: block;
+            background-size: 50% auto;
+            background-position: 100% 100%;
+        }
+
+        .col-mmenu, .col-time{
+            display:none!important;
+        }
+        .col-nav{
+            display:block!important;
+        }
+        .logo{
+            img{
+                max-width: 156px;
+                margin: 0 auto;
+            }
+        }
+        .row{
+            & *{
+                display:block;
+            }
+            &>div{
+                width:100%;
+                max-width:100%;
+                flex: 0 0 100%;
+                text-align: center;
+            }
+        }
+        ul.navbar-nav{
+            font-size: 1em;
+            line-height: 1.5em;
+            margin: 10px auto;
+
+            li{
+                a{
+                    text-decoration: underline;
+                }
+            }
+        }
+        ul.contacts{
+            max-width: 200px;
+            margin: 0 auto 0;
+            padding-left: 40px;
+            
+            li{
+                font-size: 1rem;
+                text-align: left;
+            }
+        }
+    }
 }
 
 nav.navbar{
@@ -243,4 +303,49 @@ i.adress:before{
 }
 i.insta:before{
     content: "\e903";
+}
+i.calc-icon:before{
+    content: "\e917";
+    font-weight: 100!important;
+}
+i.photo:before{
+    content: "\e918";
+}
+
+.m-menu{
+    display: none;
+    font-size: 1.2rem;
+    line-height: 1.5em;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 2;
+    background-color: rgba(0, 26, 91, 0.9);
+
+    @media screen and (max-width: 360px){
+        font-size: 1rem;
+        line-height: 1.2em;
+    }
+
+    &.show{
+        display: block;
+    }
+
+    ul{
+        margin: 26px 20px;
+
+        @media screen and (max-width: 480px){
+            margin: 18px 0px 20px 20px;
+        }
+        @media screen and (max-width: 360px){
+            margin: 18px 0px 20px 10px;
+        }
+
+        li{
+            a{
+
+            }
+        }
+    }
 }

@@ -8,6 +8,13 @@
         padding-top: 50px;
         padding-bottom: 50px;
     }
+    @media screen and (max-width: 767px){
+        padding-top: 20px;
+        margin-bottom: 5%;
+    }
+    @media screen and (max-width: 380px){
+        font-size: .8em;
+    }
 
     &:before{
         display: block;
@@ -27,9 +34,19 @@
         position: relative;
         top: -45px;
         padding-left: 80px;
+
+        @media screen and (max-width: 767px){
+            padding-left: 0px;
+        }
     }
     .row{
         align-items: center;
+
+        @media screen and (max-width: 767px){
+            &>div:first-child{
+                position: static;
+            }
+        }
     }
 
     ul{
@@ -38,10 +55,21 @@
         padding: 0px 0px 0px 24px;
         font-size: 1.8em;
         line-height: 2.5em;
+        @media screen and (max-width: 767px){
+            padding: 15px 0px 0px 80px;
+            font-size: 1.4em;
+            margin: 0 auto;
+            max-width: 320px;
+        }
 
         li{
             position: relative;
             padding-left: 45px;
+
+            @media screen and (max-width: 767px){
+                padding-left: 20px;
+                line-height: 1.5em;
+            }
 
             &:before{
                 content: "";
@@ -54,6 +82,13 @@
                 top: 50%;
                 margin-top: -9px;
                 border-radius: 18px;
+
+                @media screen and (max-width: 767px){
+                    background: #fff;
+                    width: 10px;
+                    height: 10px;
+                    margin-top: -5px;
+                }
             }
         }
     }
@@ -67,5 +102,20 @@
         left: 50%;
         margin: -245px 0px 0px -82px;
         z-index: 1;
+
+        @media screen and (max-width: 991px){
+            height: 320px;
+            background-size: auto 100%;
+            z-index: initial;
+            margin: -185px 0px 0px -82px;
+        }
+        @media screen and (max-width: 767px){
+            height: auto;
+            position: absolute;
+            top: 20%;
+            left: 0px;
+            bottom: -5%;
+            margin: 0px;
+        }
     }
 }
