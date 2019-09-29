@@ -1,5 +1,6 @@
 //=../../node_modules/jquery/dist/jquery.min.js
 //=../js/vendor/swiper.min.js
+//=../js/vendor/jquery.fancybox.min.js
 
 $(document).ready(() => {
     function swiperButtonsMobile(el){
@@ -38,8 +39,8 @@ $(document).ready(() => {
 
     //reviews carousel init
     let reviewsCarousel = new Swiper ('.reviews .swiper-container', {
-        loop: true,
-        autoplay: true,
+        loop: false,
+        autoplay: false,
         navigation: {
             prevEl: '.reviews .swiper-button-prev, .reviews .swiper-button-prev.mobile',
             nextEl: '.reviews .swiper-button-next, .reviews .swiper-button-next.mobile',
@@ -49,8 +50,8 @@ $(document).ready(() => {
 
     //gallery carousel init
     let galleryCarousel = new Swiper ('.gallery .swiper-container', {
-        loop: true,
-        autoplay: true,
+        loop: false,
+        autoplay: false,
         navigation: {
             prevEl: '.gallery .swiper-button-prev',
             nextEl: '.gallery .swiper-button-next',
@@ -202,4 +203,6 @@ $(document).ready(() => {
             'paddingLeft': leftOffset+'px'
         });
     });
+
+    $('.fancybox').fancybox();
 });
