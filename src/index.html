@@ -391,9 +391,26 @@
                         <!-- Additional required wrapper -->
                         <div class="swiper-wrapper">
                             <!-- Slides -->
-                            <div class="swiper-slide"><img src="img/recommend-seq.png" alt="Слайд 1"></div>
-                            <div class="swiper-slide"><img src="img/recommend-seq.png" alt="Слайд 2"></div>
-                            <div class="swiper-slide"><img src="img/recommend-seq.png" alt="Слайд 3"></div>
+                            <div class="swiper-slide">
+                                <div class="h3">Чуть грязная</div>
+                                <br>
+                                <img src="img/type/type_1.png" alt="Чуть грязная">
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="h3">Сильно грязная</div>
+                                <br>
+                                <img src="img/type/type_2.png" alt="Сильно грязная">
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="h3">Зимой</div>
+                                <br>
+                                <img src="img/type/type_3.png" alt="Зимой">
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="h3">Мало времени</div>
+                                <br>
+                                <img src="img/type/type_4.png" alt="Мало времени">
+                            </div>
                         </div>
                 
                         <!-- If we need navigation buttons -->
@@ -545,7 +562,7 @@
                         <div class="swiper-button-next"></div>
                     </div>
                     <div class="text-center">
-                        <div class="btn btn-default">Оставить отзыв</div>
+                        <a class="btn btn-default fancybox" href="#review-form">Оставить отзыв</a>
                     </div>
                 </div>
             </section>
@@ -665,6 +682,26 @@
                     </div>
                 </div>
             </footer>
+
+            <div class="popup-form" id="review-form">
+                <h2>Оставить отзыв</h2>
+                <form action="">
+                    <div class="row">
+                        <div class="col-12">
+                            <input type="text" placeholder="Ваше имя" value="">
+                        </div>
+                        <div class="col-12">
+                            <input type="text" placeholder="E-mail" value="">
+                        </div>
+                        <div class="col-12">
+                            <textarea placeholder="Ваш отзыв" name="" id="" cols="30" rows="10"></textarea>
+                        </div>
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-default">Отправить</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
         </main>
 
         <script src="js/main.js"></script>

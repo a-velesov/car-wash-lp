@@ -1,0 +1,24 @@
+.popup-form{
+    width: 450px;
+    max-width: 100%;
+    text-align: center;
+    display: none;
+
+    input[type=text], textarea{
+        width: 100%;
+        border: 2px solid #2ecc71;
+        font-size: 1.4em;
+        line-height: 1em;
+        padding: 10px 30px;
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+
+    textarea{
+        height: 160px;
+    }
+}
+
+.fancybox-content{
+    padding: 20px;
+}

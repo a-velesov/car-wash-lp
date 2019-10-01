@@ -28,8 +28,8 @@ $(document).ready(() => {
 
     //programs carousel init
     let programsCarousel = new Swiper ('.programs .swiper-container', {
-        loop: true,
-        autoplay: true,
+        loop: false,
+        autoplay: false,
         navigation: {
             prevEl: '.programs .swiper-button-prev',
             nextEl: '.programs .swiper-button-next',
@@ -94,7 +94,7 @@ $(document).ready(() => {
     }
 
     //map init
-    initIndexMap([53.2027893,50.1525923], 17);
+    initIndexMap([53.203163, 50.153094], 17);
 
     function doCalc(){
         let inputs = $('.calc form').find('input[type=hidden]'),
@@ -202,6 +202,14 @@ $(document).ready(() => {
         $('.m-menu').toggleClass('show').css({
             'paddingLeft': leftOffset+'px'
         });
+    });
+
+    $(".calc .first-row label").on("click", (e) => {
+        const opener = $(e.currentTarget);
+        let program = parseInt(opener.attr('for').replace("type_", ""))-1;
+
+        // console.log(program);
+        programsCarousel.slideTo(program);
     });
 
     $('.fancybox').fancybox();
