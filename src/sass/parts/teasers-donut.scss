@@ -43,9 +43,16 @@
                 right: 0px;
                 bottom: 0px;
                 left: 0px;
-                background-image: url("../img/moika_center-mobile.png");
+                background-image: url("../img/moika_center-m.png");
                 background-position: center;
                 background-repeat: no-repeat;
+                background-size: 310px;
+                @media screen and (max-width: 767px){
+                    background-size: 210px;
+                }
+                @media screen and (max-width: 575px){
+                    background-size: 140px;
+                }
             }
         }
         @media screen and (max-width: 380px){

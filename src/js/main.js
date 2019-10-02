@@ -8,7 +8,7 @@ $(document).ready(() => {
             let prevEl = el.navigation.prevEl,
                 nextEl = el.navigation.nextEl,
                 slider = el.el;
-    
+
             title = $(slider).parents('section').find('h2, .h2');
             if($(title).length){
                 $(title).append(prevEl).append(nextEl).addClass('swButtons');
@@ -67,7 +67,7 @@ $(document).ready(() => {
                 else
                     setTimeout(_wait_for_map, 50);
             }
-      
+
             $('head').append('<script type="text/javascript" src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"><script>');
             _wait_for_map();
         } else {
@@ -114,7 +114,7 @@ $(document).ready(() => {
                 }
             });
         }
-        $('.calc-total span').text(total+' рублей');
+        $('.calc-total span').text(total+' руб.');
         // console.log('calc!');
     }
 
@@ -128,17 +128,17 @@ $(document).ready(() => {
     }
 
     $('.calc form label').hover(
-        (e) => {
-            const input = e.currentTarget.control;
-            let valueInput = $(input).parents('.form-row').find('input[type=hidden]');
-            
-            if(input.checked && input.dataset.price > 0){
-                showCounter(e.currentTarget, valueInput);
-            }
-        },  
-        (e) => {
-            // console.log(e);
-        }
+      (e) => {
+          const input = e.currentTarget.control;
+          let valueInput = $(input).parents('.form-row').find('input[type=hidden]');
+
+          if(input.checked && input.dataset.price > 0){
+              showCounter(e.currentTarget, valueInput);
+          }
+      },
+      (e) => {
+          // console.log(e);
+      }
     );
 
     $(document).on('click', '.calc form label', (e) => {
@@ -170,31 +170,36 @@ $(document).ready(() => {
         const el = $(e.currentTarget);
         let valueInput = el.parents('.form-row').find('input[type=hidden]');
         $(valueInput).attr('data-price', el.attr('data-price'));
-        
+
         doCalc();
     });
 
     $(document).mouseup((e) => {
-		var div = $(".calc-popup");
-		if (!div.is(e.target)
-		    && div.has(e.target).length === 0) {
-			div.remove(); // скрываем его
-		}
-	});
+        var div = $(".calc-popup");
+        if (!div.is(e.target)
+          && div.has(e.target).length === 0) {
+            div.remove(); // скрываем его
+        }
+    });
 
     doCalc();
 
-    $(".navbar-nav a.anchor, .contacts a.anchor").on("click", (e) => {
+    $(".navbar-nav a.anchor, .contacts a.anchor, .m-menu a.anchor").on("click", (e) => {
         var anchor = $(e.currentTarget);
         // console.log(anchor);
-        
-		$('html, body').stop().animate({
-			scrollTop: $(anchor.attr('href')).offset().top
-		}, 777);
-		e.preventDefault();
-		return false;
+
+        if(anchor.parents('.m-menu').length){
+            anchor.parents('.m-menu').removeClass('show');
+        }
+
+        $('html, body').stop().animate({
+            scrollTop: $(anchor.attr('href')).offset().top
+        }, 777);
+
+        e.preventDefault();
+        return false;
     });
-    
+
     $(".menu-o").on("click", (e) => {
         const opener = $(e.currentTarget);
         let leftOffset = opener.offset().left+opener.width();

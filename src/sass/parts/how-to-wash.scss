@@ -54,7 +54,7 @@
         &>li{
             counter-increment: how-to-wash-counter;
             padding-left: 88px;
-            padding-bottom: 22%;
+            padding-bottom: 30%;
             margin-bottom: 145px;
 
             @media screen and (max-width: 991px){
@@ -137,7 +137,7 @@
                 left: 0px;
                 right: 28px;
                 bottom: 0px;
-                padding-bottom: 60%;
+                padding-bottom: 80%;
                 background-position: 50%;
                 background-size: cover;
 
@@ -200,6 +200,7 @@
         li{
             position: relative;
             padding: 32px 0px 0px 0px;
+            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.15);
 
             &:before{
                 content: "\e90c";
@@ -230,19 +231,22 @@
             }
 
             &:nth-child(1){
-                &:before{
-                    color: #ed1f24;
-                }
+                color: #ed1f24;
+                // &:before{
+                //     color: #ed1f24;
+                // }
             }
             &:nth-child(2){
-                &:before{
-                    color: #0a5192;
-                }
+                color: #0a5192;
+                // &:before{
+                //     color: #0a5192;
+                // }
             }
             &:nth-child(3){
-                &:before{
-                    color: #aeca0b;
-                }
+                color: #aeca0b;
+                // &:before{
+                //     color: #aeca0b;
+                // }
             }
         }
     }

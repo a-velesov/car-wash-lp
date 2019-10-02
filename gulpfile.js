@@ -32,7 +32,7 @@ const path = { //пути до всего в одном месте
     watch: { // смотрим за изменениями этих объектов
         html: 'src/**/*.html',
         js: 'src/js/**/*.js',
-        sass: 'src/sass/**/*.scss',
+        sass: 'src/sass/**/*.*',
         img: 'src/img/**/*.*',
         fonts: 'src/fonts/**/*.*'
     },

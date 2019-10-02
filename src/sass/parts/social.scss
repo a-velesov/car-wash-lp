@@ -30,7 +30,7 @@
         line-height: 1.2em;
         @media screen and (max-width: 767px){
             font-size: 2.4em;
-            line-height: 1em;         
+            line-height: 1em;
         }
     }
 
@@ -77,10 +77,32 @@
                 &.vk:before{
                     content: "\e916";
                 }
-                &.insta:before{
-                    content: "\e903";
+                &.github:before{
+                    background-image: url('../img/svg/github.svg');
+                    background-size: 100% 100%;
+                    display: block;
+                    content: "";
+                    position: absolute;
+                    left: 0px;
+                    right: 0px;
+                    background-repeat: no-repeat;
                 }
             }
         }
+    }
+}
+.github:before{
+    background-image: url('../img/svg/github.svg');
+    content: "";
+    position: absolute;
+    left: -28px;
+    background-repeat: no-repeat;
+    height: 1em;
+    background-size: 100% 100%;
+    top: 5px;
+    width: 1em;
+
+    @media screen and (max-width: 575px) {
+    left: -20px;
     }
 }
