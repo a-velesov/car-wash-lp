@@ -114,5 +114,6 @@ gulp.task('clean', function (cb) {
 });
 
 gulp.task('default', gulp.parallel('html', 'sass', 'js', 'images', 'fonts', 'watch', 'connect'));
+gulp.task('build', gulp.parallel('html', 'sass', 'js', 'images', 'fonts'));
 
 // test
